@@ -7,10 +7,10 @@ export default function SiteHeader() {
       <div className="container py-3 d-flex align-items-center justify-content-between gap-3">
         <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none">
           <img
-            src="/images/placeholder-preview.png"
-            alt=""
-            width={44}
-            height={44}
+            src="/images/simple-biz-toolkit-logo.png"
+            alt="Simple Biz Toolkit"
+            width={80}
+            height={80}
             style={{ borderRadius: 12, border: "1px solid var(--sb-border)" }}
           />
           <div>
