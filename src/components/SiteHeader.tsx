@@ -16,7 +16,7 @@ export default function SiteHeader() {
           <div>
             <div style={{ fontWeight: 900, color: "var(--sb-ink)", lineHeight: 1.1 }}>Simple Biz Toolkit</div>
             <div className="sb-muted" style={{ fontSize: 12.5 }}>
-              Practical Templates & Tools for Small Business Owners
+              Essential Templates & Tools for Small Business Owners
             </div>
           </div>
         </Link>

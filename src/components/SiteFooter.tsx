@@ -9,7 +9,7 @@ export default function SiteFooter() {
       <div className="container py-4 d-flex flex-column flex-lg-row justify-content-between gap-3">
         <div>
           <div style={{ fontWeight: 900 }}>Simple Biz Toolkit</div>
-          <div className="sb-muted">Practical templates & tools for small business owners.</div>
+          <div className="sb-muted">Essential templates & tools for small business owners.</div>
           <div className="sb-muted mt-2" style={{ fontSize: 13 }}>
             Fastest support: Etsy messages. Email: <strong>simplebiztoolkit@gmail.com</strong>
           </div>

@@ -9,7 +9,7 @@ export default function BlogIndexPage() {
     <>
       <Seo
         title="Resources | Simple Biz Toolkit"
-        description="Guides and tips for small business owners and Etsy sellers. Practical advice that links to tools you can use immediately."
+        description="Guides and tips for small business owners and Etsy sellers. Essential advice that links to tools you can use immediately."
         canonicalPath="/blog"
       />
 

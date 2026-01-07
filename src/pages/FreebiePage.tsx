@@ -17,7 +17,7 @@ export default function FreebiePage() {
             <div className="col-lg-6">
               <h1 style={{ fontWeight: 900 }}>Free starter template</h1>
               <p className="sb-muted fs-5">
-                A practical download you can use today. This is your lead magnet — it builds your list and trust. :contentReference[oaicite:13]{index=13}
+                A Essential download you can use today. This is your lead magnet — it builds your list and trust. :contentReference[oaicite:13]{index=13}
               </p>
 
               <div className="sb-card p-3">

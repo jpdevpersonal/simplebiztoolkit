@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        title="Simple Biz Toolkit | Practical Templates & Tools for Small Business Owners"
+        title="Simple Biz Toolkit | Essential Templates & Tools for Small Business Owners"
         description="Trust-first templates and toolkits that save time and reduce admin. Get a free starter template, then shop securely on Etsy."
         canonicalPath="/"
         jsonLd={orgJsonLd}
@@ -42,7 +42,7 @@ export default function HomePage() {
           <div className="row align-items-center g-4">
             <div className="col-lg-6">
               <h1 className="sb-hero-title">
-                Practical templates & tools for small business owners
+                Essential templates & tools for small business owners
               </h1>
               <p className="sb-muted fs-5">
                 Simple, ready-to-use downloads that reduce admin, keep you organised, and don’t require tech skills.
@@ -97,13 +97,13 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center mb-4">
             <h2 style={{ fontWeight: 900 }}>Designed to be simple</h2>
-            <p className="sb-muted">Clear layouts, printable formats, and practical categories.</p>
+            <p className="sb-muted">Clear layouts, printable formats, and Essential categories.</p>
           </div>
 
           <div className="row g-3">
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Practical templates</div>
+                <div style={{ fontWeight: 900 }}>Essential templates</div>
                 <div className="sb-muted">Tracking, planning, and admin — without overcomplication.</div>
               </div>
             </div>

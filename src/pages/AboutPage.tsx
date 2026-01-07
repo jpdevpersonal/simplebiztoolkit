@@ -6,7 +6,7 @@ export default function AboutPage() {
     <>
       <Seo
         title="About | Simple Biz Toolkit"
-        description="The story behind Simple Biz Toolkit and why these templates are built to be simple, practical, and reusable."
+        description="The story behind Simple Biz Toolkit and why these templates are built to be simple, Essential, and reusable."
         canonicalPath="/about"
       />
 
