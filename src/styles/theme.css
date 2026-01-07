@@ -1,0 +1,105 @@
+:root {
+  --sb-ink: #0f1f2e;
+  --sb-muted: #556370;
+  --sb-border: #e6edf3;
+  --sb-soft: #f6f8fb;
+
+  --sb-blue: #0b3a67;
+  --sb-green: #1f7a5a;
+  --sb-green2: #2aa36b;
+
+  --sb-radius: 18px;
+  --sb-shadow: 0 10px 30px rgba(15, 31, 46, 0.08);
+}
+
+html, body { height: 100%; }
+body {
+  color: var(--sb-ink);
+  background: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+a { color: var(--sb-blue); }
+a:hover { color: var(--sb-blue); opacity: 0.9; }
+
+.sb-card {
+  border: 1px solid var(--sb-border);
+  border-radius: var(--sb-radius);
+  box-shadow: var(--sb-shadow);
+  background: #fff;
+}
+
+.sb-muted { color: var(--sb-muted); }
+
+.sb-btn-primary {
+  border: 0;
+  color: #fff !important;
+  background: linear-gradient(90deg, var(--sb-green), var(--sb-green2)) !important;
+  box-shadow: 0 10px 18px rgba(31, 122, 90, 0.20);
+  font-weight: 800;
+}
+.sb-btn-primary:hover { filter: brightness(0.98); }
+
+.sb-btn-ghost {
+  border: 1px solid var(--sb-border) !important;
+  background: #fff !important;
+  color: var(--sb-blue) !important;
+  font-weight: 800;
+}
+.sb-btn-ghost:hover { background: var(--sb-soft) !important; }
+
+.sb-section {
+  padding: 3.25rem 0;
+}
+.sb-section-alt {
+  background: var(--sb-soft);
+  border-top: 1px solid var(--sb-border);
+  border-bottom: 1px solid var(--sb-border);
+}
+
+.sb-trust-pill {
+  border: 1px solid var(--sb-border);
+  background: var(--sb-soft);
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--sb-muted);
+}
+
+.sb-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.sb-skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  border: 1px solid var(--sb-border);
+  box-shadow: var(--sb-shadow);
+  z-index: 9999;
+}
+
+/* Sticky mobile CTA bar */
+.sb-sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--sb-border);
+  padding: 0.6rem;
+}
+@media (min-width: 992px) {
+  .sb-sticky-cta { display: none; }
+}

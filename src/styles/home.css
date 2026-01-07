@@ -1,0 +1,12 @@
+.sb-hero {
+  padding: 3rem 0 1.5rem;
+}
+.sb-hero-title {
+  font-weight: 950;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+@media (max-width: 576px) {
+  body { padding-bottom: 72px; } /* space for sticky CTA bar */
+}
