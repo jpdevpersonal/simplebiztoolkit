@@ -41,7 +41,7 @@ export default function CategoryPage() {
               <div className="sb-card p-3">
                 <div style={{ fontWeight: 900 }}>Why this helps</div>
                 <div className="sb-muted">
-                  Explain the problem, show the solution, then send them to Etsy with confidence. This is the funnel. :contentReference[oaicite:11]{index=11}
+                  Explain the problem, show the solution, then send them to Etsy with confidence. This is the funnel. :contentReference[oaicite:11]
                 </div>
               </div>
 

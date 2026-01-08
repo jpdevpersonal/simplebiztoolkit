@@ -15,7 +15,7 @@ export default function TestimonialsPage() {
         <div className="container">
           <h1 style={{ fontWeight: 900 }}>Reviews</h1>
           <p className="sb-muted">
-            Put your best Etsy quotes here (real ones). Testimonials near CTAs increase conversions. :contentReference[oaicite:19]{index=19}
+            Put your best Etsy quotes here (real ones). Testimonials near CTAs increase conversions. :contentReference[oaicite:19]
           </p>
 
           <TestimonialGrid />

@@ -16,9 +16,9 @@ export default function ProductsPage() {
       <section className="sb-section">
         <div className="container">
           <h1 style={{ fontWeight: 900 }}>Products</h1>
-          <p className="sb-muted">
-            Dedicated category pages = more SEO surface area + clearer buyer intent before sending them to Etsy. :contentReference[oaicite:9]{index=9}
-          </p>
+          {/* <p className="sb-muted">
+            Dedicated category pages = more SEO surface area + clearer buyer intent before sending them to Etsy. :contentReference[oaicite:9]
+          </p> */}
 
           <div className="row g-3 mt-2">
             {categories.map((c) => (
@@ -37,7 +37,7 @@ export default function ProductsPage() {
 
           <div className="sb-card p-3 mt-4">
             <div className="sb-muted" style={{ fontSize: 13 }}>
-              Pro tip: write unique copy here (not copy/paste Etsy descriptions). This is what ranks on Google. :contentReference[oaicite:10]{index=10}
+              Pro tip: write unique copy here (not copy/paste Etsy descriptions). This is what ranks on Google. :contentReference[oaicite:10]
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function AboutPage() {
               Hi, I’m Julian. I create simple business templates for real people who just want to stay organised.
             </p>
             <p className="sb-muted mb-0">
-              Add credibility here (sales count, Star Seller, etc.). This is a trust lever. :contentReference[oaicite:17]{index=17}
+              Add credibility here (sales count, Star Seller, etc.). This is a trust lever. :contentReference[oaicite:17]
             </p>
           </div>
 

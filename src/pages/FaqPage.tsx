@@ -14,7 +14,7 @@ export default function FaqPage() {
         <div className="container" style={{ maxWidth: 900 }}>
           <h1 style={{ fontWeight: 900 }}>FAQ</h1>
           <p className="sb-muted">
-            FAQs reduce hesitation and can rank for “People also ask” queries. :contentReference[oaicite:18]{index=18}
+            FAQs reduce hesitation and can rank for “People also ask” queries. :contentReference[oaicite:18]
           </p>
 
           <FaqAccordion />

@@ -11,9 +11,9 @@ import "../styles/home.css";
 
 export default function HomePage() {
   const trust = [
-    "4.7★ Etsy rating (placeholder)",
-    "Etsy Star Seller (placeholder)",
-    "Instant digital download",
+    "4.8★ Etsy rating",
+    "Etsy Star Seller",
+    "Instant digital downloads",
     "Secure checkout via Etsy",
   ];
 

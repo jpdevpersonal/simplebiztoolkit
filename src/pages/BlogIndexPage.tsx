@@ -17,7 +17,7 @@ export default function BlogIndexPage() {
         <div className="container">
           <h1 style={{ fontWeight: 900 }}>Resources</h1>
           <p className="sb-muted">
-            Helpful content attracts traffic, builds trust, and converts readers into buyers and subscribers. :contentReference[oaicite:15]{index=15}
+            Helpful content attracts traffic, builds trust, and converts readers into buyers and subscribers. :contentReference[oaicite:15]
           </p>
 
           <div className="row g-3 mt-2">

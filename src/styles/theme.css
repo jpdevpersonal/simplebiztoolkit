@@ -7,6 +7,7 @@
   --sb-blue: #0b3a67;
   --sb-green: #1f7a5a;
   --sb-green2: #2aa36b;
+  --sb-light-gold: #eeeb06;
 
   --sb-radius: 18px;
   --sb-shadow: 0 10px 30px rgba(15, 31, 46, 0.08);
@@ -59,7 +60,7 @@ a:hover { color: var(--sb-blue); opacity: 0.9; }
 
 .sb-trust-pill {
   border: 1px solid var(--sb-border);
-  background: var(--sb-soft);
+  background: var(--sb-light-gold);
   border-radius: 999px;
   padding: 0.45rem 0.7rem;
   font-weight: 800;

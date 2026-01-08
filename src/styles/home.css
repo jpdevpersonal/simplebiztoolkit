@@ -6,6 +6,7 @@
   letter-spacing: -0.03em;
   line-height: 1.05;
   font-size: clamp(2rem, 4vw, 3rem);
+  color: hsl(221, 65%, 10%);
 }
 @media (max-width: 576px) {
   body { padding-bottom: 72px; } /* space for sticky CTA bar */

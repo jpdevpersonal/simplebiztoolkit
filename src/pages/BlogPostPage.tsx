@@ -60,7 +60,7 @@ export default function BlogPostPage() {
           <div className="sb-card p-4 mt-4">
             <div style={{ fontWeight: 900 }}>Next step</div>
             <div className="sb-muted">
-              Get a free starter template, then shop securely on Etsy when you’re ready. :contentReference[oaicite:16]{index=16}
+              Get a free starter template, then shop securely on Etsy when you’re ready. :contentReference[oaicite:16]
             </div>
 
             <div className="d-flex gap-2 flex-wrap mt-3">
