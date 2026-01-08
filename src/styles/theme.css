@@ -13,11 +13,20 @@
   --sb-shadow: 0 10px 30px rgba(15, 31, 46, 0.08);
 }
 
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  width: 100%;
+}
 body {
   color: var(--sb-ink);
   background: #fff;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
 }
 
 a { color: var(--sb-blue); }
@@ -31,6 +40,26 @@ a:hover { color: var(--sb-blue); opacity: 0.9; }
 }
 
 .sb-muted { color: var(--sb-muted); }
+
+/* Header layout: prevent mobile horizontal overflow */
+.sb-site-header-inner {
+  flex-wrap: wrap;
+}
+.sb-site-header-brand {
+  min-width: 0;
+}
+.sb-site-header-actions {
+  flex-wrap: wrap;
+}
+
+/* Brand title (responsive) */
+.sb-brand-title {
+  font-weight: 900;
+  color: var(--sb-ink);
+  line-height: 1.1;
+  /* Mobile-first: keep the header compact while scaling up on larger screens */
+  font-size: clamp(1.25rem, 4.2vw, 1.75rem);
+}
 
 .sb-btn-primary {
   border: 0;

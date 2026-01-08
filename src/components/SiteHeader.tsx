@@ -3,9 +3,9 @@ import { LINKS } from "../app/App";
 
 export default function SiteHeader() {
   return (
-    <header className="sticky-top" style={{ background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--sb-border)" }}>
-      <div className="container py-3 d-flex align-items-center justify-content-between gap-3">
-        <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none">
+    <header className="sticky-top sb-site-header" style={{ background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--sb-border)" }}>
+      <div className="container py-3 d-flex align-items-center justify-content-between gap-3 sb-site-header-inner">
+        <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none sb-site-header-brand">
           <img
             src="/images/simple-biz-toolkit-logo.png"
             alt="Simple Biz Toolkit"
@@ -14,7 +14,7 @@ export default function SiteHeader() {
             style={{ borderRadius: 12, border: "1px solid var(--sb-border)" }}
           />
           <div>
-            <div style={{ fontWeight: 900, color: "var(--sb-ink)", lineHeight: 1.1 }}>Simple Biz Toolkit</div>
+            <div className="sb-brand-title">Simple Biz Toolkit</div>
             <div className="sb-muted" style={{ fontSize: 12.5 }}>
               Essential Templates & Tools for Small Business Owners
             </div>
@@ -30,7 +30,7 @@ export default function SiteHeader() {
           <NavLink className="px-2 py-1 text-decoration-none sb-muted" to="/contact">Contact</NavLink>
         </nav>
 
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 sb-site-header-actions">
           <Link to={LINKS.freebiePage} className="btn sb-btn-ghost d-none d-sm-inline-flex">
             Get free template
           </Link>
