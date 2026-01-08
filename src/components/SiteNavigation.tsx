@@ -10,10 +10,12 @@ export default function SiteNavigation() {
 
   // Close menu only when route actually changes
   useEffect(() => {
-    if (prevPathRef.current !== location.pathname) {
+    if (prevPathRef.current === location.pathname) return;
+    prevPathRef.current = location.pathname;
+    const handle = setTimeout(() => {
       setIsOpen(false);
-      prevPathRef.current = location.pathname;
-    }
+    }, 0);
+    return () => clearTimeout(handle);
   }, [location.pathname]);
 
   // Prevent body scroll when menu is open
