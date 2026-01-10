@@ -36,6 +36,7 @@ export default function SiteNavigation() {
     { to: "/testimonials", label: "Reviews" },
     { to: "/about", label: "About" },
     { to: "/faq", label: "FAQ" },
+    { to: "/help", label: "Help" },
     { to: "/contact", label: "Contact" }
   ];
 

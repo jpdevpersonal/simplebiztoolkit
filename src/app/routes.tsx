@@ -10,6 +10,7 @@ import AboutPage from "../pages/AboutPage";
 import TestimonialsPage from "../pages/TestimonialsPage";
 import FaqPage from "../pages/FaqPage";
 import ContactPage from "../pages/ContactPage";
+import HelpPage from "../pages/HelpPage";
 
 export const routes: RouteObject[] = [
   { path: "/", element: <HomePage /> },
@@ -21,5 +22,7 @@ export const routes: RouteObject[] = [
   { path: "/about", element: <AboutPage /> },
   { path: "/testimonials", element: <TestimonialsPage /> },
   { path: "/faq", element: <FaqPage /> },
+  { path: "/help", element: <HelpPage /> },
   { path: "/contact", element: <ContactPage /> },
 ];
+
