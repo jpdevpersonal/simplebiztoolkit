@@ -15,7 +15,7 @@ export default function ProductsPage() {
 
       <section className="sb-section">
         <div className="container">
-          <h1 style={{ fontWeight: 900 }}>Products</h1>
+          <h1 style={{ fontWeight: 900 }}>Product Categories</h1>
           {/* <p className="sb-muted">
             Dedicated category pages = more SEO surface area + clearer buyer intent before sending them to Etsy. :contentReference[oaicite:9]
           </p> */}
