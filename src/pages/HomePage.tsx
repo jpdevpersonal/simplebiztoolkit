@@ -45,11 +45,17 @@ export default function HomePage() {
                 Essential templates & tools for small business owners
               </h1>
               <p className="sb-muted fs-5">
-                Simple, ready-to-use downloads that reduce admin, keep you organised, and don’t require tech skills.
+                Simple, ready-to-use downloads that reduce admin, keep you
+                organised, and don’t require tech skills.
               </p>
 
               <div className="d-flex gap-2 flex-wrap mt-3">
-                <a className="btn sb-btn-primary" href={LINKS.etsyShopUrl} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="btn sb-btn-primary"
+                  href={LINKS.etsyShopUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Shop on Etsy
                 </a>
                 <Link className="btn sb-btn-ghost" to="/products">
@@ -63,20 +69,28 @@ export default function HomePage() {
 
               {/* One strong testimonial near CTA */}
               <div className="sb-card p-3 mt-4">
-                <div style={{ fontWeight: 900 }}>"Saved me hours each month."</div>
-                <div className="sb-muted" style={{ fontSize: 13 }}>— Verified Etsy buyer (placeholder)</div>
+                <div style={{ fontWeight: 900 }}>
+                  "Saved me hours each month."
+                </div>
+                <div className="sb-muted" style={{ fontSize: 13 }}>
+                  — Verified Etsy buyer (placeholder)
+                </div>
               </div>
             </div>
 
             <div className="col-lg-6">
               <div className="sb-card p-3">
                 <img
-                  src="/images/placeholder-hero.png"
-                  alt="Placeholder hero illustration"
+                  src="/images/hero-image-desk.png"
+                  alt="Tools for you small business"
                   className="img-fluid rounded-4"
                 />
-                <div className="sb-muted mt-2" style={{ fontSize: 13 }}>
-                  Replace with your toolbox illustration / banner image.
+                <div
+                  className="sb-muted mt-2"
+                  style={{ fontSize: 16, textAlign: "center", fontWeight: 900 }}
+                >
+                  "I run a small business. I like things simple. These tools fit
+                  my life."
                 </div>
               </div>
             </div>
@@ -84,8 +98,12 @@ export default function HomePage() {
 
           {/* Product previews (proof) */}
           <div className="sb-section pt-4 pb-0">
-            <h2 className="text-center" style={{ fontWeight: 900 }}>What the tools look like</h2>
-            <p className="text-center sb-muted">A quick preview — the full details and checkout are on Etsy.</p>
+            <h2 className="text-center" style={{ fontWeight: 900 }}>
+              What the tools look like
+            </h2>
+            <p className="text-center sb-muted">
+              A quick preview — the full details and checkout are on Etsy.
+            </p>
 
             <ProductGrid products={featured} />
           </div>
@@ -97,26 +115,35 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center mb-4">
             <h2 style={{ fontWeight: 900 }}>Designed to be simple</h2>
-            <p className="sb-muted">Clear layouts, printable formats, and Essential categories.</p>
+            <p className="sb-muted">
+              Clear layouts, printable formats, and Essential categories.
+            </p>
           </div>
 
           <div className="row g-3">
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
                 <div style={{ fontWeight: 900 }}>Essential templates</div>
-                <div className="sb-muted">Tracking, planning, and admin — without overcomplication.</div>
+                <div className="sb-muted">
+                  Tracking, planning, and admin — without overcomplication.
+                </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
                 <div style={{ fontWeight: 900 }}>Simple systems</div>
-                <div className="sb-muted">Repeatable formats that keep you consistent.</div>
+                <div className="sb-muted">
+                  Repeatable formats that keep you consistent.
+                </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
                 <div style={{ fontWeight: 900 }}>Real-world use</div>
-                <div className="sb-muted">Made for small business owners, solo operators, and online sellers.</div>
+                <div className="sb-muted">
+                  Made for small business owners, solo operators, and online
+                  sellers.
+                </div>
               </div>
             </div>
           </div>
@@ -129,14 +156,24 @@ export default function HomePage() {
           <div className="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
             <div>
               <h2 style={{ fontWeight: 900 }}>What customers say</h2>
-              <p className="sb-muted mb-0">Social proof reduces hesitation. Put it right next to the action.</p>
+              <p className="sb-muted mb-0">
+                Social proof reduces hesitation. Put it right next to the
+                action.
+              </p>
             </div>
-            <Link className="btn sb-btn-ghost" to="/testimonials">Read more reviews</Link>
+            <Link className="btn sb-btn-ghost" to="/testimonials">
+              Read more reviews
+            </Link>
           </div>
           <TestimonialGrid />
 
           <div className="text-center mt-4">
-            <a className="btn sb-btn-primary" href={LINKS.etsyShopUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn sb-btn-primary"
+              href={LINKS.etsyShopUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Shop on Etsy (secure checkout)
             </a>
           </div>
@@ -151,7 +188,8 @@ export default function HomePage() {
               <div className="col-lg-6">
                 <h2 style={{ fontWeight: 900 }}>Get a free starter template</h2>
                 <p className="sb-muted mb-2">
-                  A quick win you can use today. This is the start of your email list funnel.
+                  A quick win you can use today. This is the start of your email
+                  list funnel.
                 </p>
                 <ul className="sb-muted mb-0">
                   <li>Instant download link (via email)</li>
@@ -162,7 +200,8 @@ export default function HomePage() {
               <div className="col-lg-6">
                 <EmailCaptureForm source="home-lead-magnet" />
                 <div className="sb-muted mt-2" style={{ fontSize: 13 }}>
-                  By subscribing you agree to receive emails. Unsubscribe anytime.
+                  By subscribing you agree to receive emails. Unsubscribe
+                  anytime.
                 </div>
               </div>
             </div>
