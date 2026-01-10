@@ -13,16 +13,53 @@ export default function AboutPage() {
       <section className="sb-section">
         <div className="container" style={{ maxWidth: 900 }}>
           <h1 style={{ fontWeight: 900 }}>About</h1>
-          <p className="sb-muted fs-5">
-            Small businesses don’t need more complexity — they need tools that make admin boring and predictable.
-          </p>
+
+          <p className="sb-muted fs-5">Welcome to Simple Biz Toolkit: Your Source for Premium Printable Solutions.</p>
 
           <div className="sb-card p-4">
-            <p className="mb-2">
-              Hi, I’m Julian. I create simple business templates for real people who just want to stay organised.
+            <p>
+              At Simple Biz Toolkit, we specialize in crafting high-quality, printable forms and templates designed to
+              streamline your business operations and simplify your personal life.
             </p>
-            <p className="sb-muted mb-0">
-              Add credibility here (sales count, Star Seller, etc.). This is a trust lever. :contentReference[oaicite:17]
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+              <li>
+                <strong>Time-Saving Solutions:</strong> Our expertly designed templates allow you to focus on what truly
+                matters – your business or personal projects.
+              </li>
+              <li>
+                <strong>Affordability:</strong> Get professional-grade templates at a fraction of the cost of expensive
+                pre-made books or complex systems.
+              </li>
+              <li>
+                <strong>Original Designs:</strong> Every product in our store is our original creation, ensuring you
+                receive unique, tailored solutions.
+              </li>
+              <li>
+                <strong>Versatility:</strong> From business invoices to personal planners, we offer a wide range of
+                templates to suit your diverse needs.
+              </li>
+              <li>
+                <strong>Quality Assurance:</strong> We take immense pride in delivering top-notch products that meet your
+                expectations.
+              </li>
+            </ul>
+
+            <h3>Our Commitment to You</h3>
+            <p>At Simple Biz Toolkit, we believe in growing with our customers. Your feedback is invaluable to us.</p>
+
+            <h3>Ready to Simplify Your Life?</h3>
+            <p>
+              Browse our store and discover how our templates can transform your workflow and simplify your life. With
+              every purchase, you're not just buying a template – you're investing in efficiency, simplicity and peace
+              of mind.
+            </p>
+
+            <p>If you have questions or need assistance, we're here to help. Don't hesitate to message us on our etsy store.</p>
+            <p><a href="https://www.etsy.com/shop/simplebiztoolkit" target="_blank" rel="noopener noreferrer">https://www.etsy.com/shop/simplebiztoolkit</a></p>
+            <p className="mb-0">Julian
+              <br />Founder
             </p>
           </div>
 
