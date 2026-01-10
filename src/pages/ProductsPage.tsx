@@ -24,11 +24,17 @@ export default function ProductsPage() {
             {categories.map((c) => (
               <div className="col-md-4" key={c.slug}>
                 <div className="sb-card p-3 h-100">
-                  <div style={{ fontWeight: 900 }}>{c.name}</div>
+                  <div style={{ fontWeight: 900 }}>
+                    <Link to={`/products/${c.slug}`}>{c.name}</Link>
+                  </div>
                   <div className="sb-muted mt-1">{c.summary}</div>
                   <div className="mt-3 d-flex gap-2 flex-wrap">
-                    <Link className="btn sb-btn-primary" to={`/products/${c.slug}`}>View category</Link>
-                    <Link className="btn sb-btn-ghost" to="/free">Get free template</Link>
+                    <Link
+                      className="btn sb-btn-primary"
+                      to={`/products/${c.slug}`}
+                    >
+                      View category
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -37,7 +43,9 @@ export default function ProductsPage() {
 
           <div className="sb-card p-3 mt-4">
             <div className="sb-muted" style={{ fontSize: 13 }}>
-              Pro tip: write unique copy here (not copy/paste Etsy descriptions). This is what ranks on Google. :contentReference[oaicite:10]
+              Pro tip: write unique copy here (not copy/paste Etsy
+              descriptions). This is what ranks on Google.
+              :contentReference[oaicite:10]
             </div>
           </div>
         </div>
