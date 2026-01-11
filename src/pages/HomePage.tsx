@@ -13,7 +13,6 @@ export default function HomePage() {
   const trust = [
     "4.8★ Etsy rating",
     "Etsy Star Seller",
-    "Instant digital downloads",
     "Secure checkout via Etsy",
   ];
 
