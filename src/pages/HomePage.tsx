@@ -16,6 +16,7 @@ export default function HomePage() {
     "Secure checkout via Etsy",
   ];
 
+  // Featured products: first item from first 3 categories
   const featured = categories.flatMap((c) => c.items.slice(0, 1)).slice(0, 3);
 
   const orgJsonLd = {
@@ -98,7 +99,7 @@ export default function HomePage() {
           {/* Product previews (proof) */}
           <div className="sb-section pt-4 pb-0">
             <h2 className="text-center" style={{ fontWeight: 900 }}>
-              What the tools look like
+              What the templates look like
             </h2>
             <p className="text-center sb-muted">
               A quick preview — the full details and checkout are on Etsy.
