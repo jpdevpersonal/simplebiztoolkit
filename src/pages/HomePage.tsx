@@ -12,8 +12,9 @@ import "../styles/home.css";
 export default function HomePage() {
   const trust = [
     "4.8★ Etsy rating",
-    "Etsy Star Seller",
+    "Etsy Star Seller!",
     "Secure checkout via Etsy",
+    "Over 3500 sales",
   ];
 
   // Featured products: first item from first 3 categories

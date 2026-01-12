@@ -16,10 +16,6 @@ export default function ProductsPage() {
       <section className="sb-section">
         <div className="container">
           <h1 style={{ fontWeight: 900 }}>Product Categories</h1>
-          {/* <p className="sb-muted">
-            Dedicated category pages = more SEO surface area + clearer buyer intent before sending them to Etsy. :contentReference[oaicite:9]
-          </p> */}
-
           <div className="row g-3 mt-2">
             {categories.map((c) => (
               <div className="col-md-4" key={c.slug}>
