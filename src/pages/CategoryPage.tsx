@@ -41,21 +41,34 @@ export default function CategoryPage() {
               <div className="sb-card p-3">
                 <div style={{ fontWeight: 900 }}>Why this helps</div>
                 <div className="sb-muted">
-                  Explain the problem, show the solution, then send them to Etsy with confidence. This is the funnel. :contentReference[oaicite:11]
+                  Explain the problem, show the solution, then send them to Etsy
+                  with confidence. This is the funnel.
+                  :contentReference[oaicite:11]
                 </div>
               </div>
 
               <div className="mt-3 d-flex gap-2 flex-wrap">
-                <a className="btn sb-btn-primary" href={LINKS.etsyShopUrl} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="btn sb-btn-primary"
+                  href={LINKS.etsyShopUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Shop on Etsy
                 </a>
-                <a className="btn sb-btn-ghost" href="#items">See templates</a>
+                <a className="btn sb-btn-ghost" href="#items">
+                  See templates
+                </a>
               </div>
             </div>
 
             <div className="col-lg-5">
               <div className="sb-card p-3">
-                <img src={cat.heroImage} alt="" className="img-fluid rounded-4" />
+                <img
+                  src={cat.heroImage}
+                  alt=""
+                  className="img-fluid rounded-4"
+                />
               </div>
             </div>
           </div>

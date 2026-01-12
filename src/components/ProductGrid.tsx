@@ -23,7 +23,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 <picture>
                   <img
                     src={p.image}
-                    alt="Printable Accounting Ledger (General)"
+                    alt={p.title}
                     className="img-fluid ledger-thumb"
                   />
                 </picture>
