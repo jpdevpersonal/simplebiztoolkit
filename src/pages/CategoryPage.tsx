@@ -3,6 +3,7 @@ import Seo from "../components/Seo";
 import ProductGrid from "../components/ProductGrid";
 import { categories } from "../data/products";
 import { LINKS } from "../app/App";
+import "../styles/products.css";
 
 export default function CategoryPage() {
   const { categorySlug } = useParams();

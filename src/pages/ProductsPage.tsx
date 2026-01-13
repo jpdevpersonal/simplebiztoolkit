@@ -19,7 +19,7 @@ export default function ProductsPage() {
           <div className="row g-3 mt-2">
             {categories.map((c) => (
               <div className="col-md-4" key={c.slug}>
-                <div className="sb-card p-3 h-100">
+                <div className="sb-card p-3 h-100 category-card">
                   <div style={{ fontWeight: 900 }}>
                     <Link to={`/products/${c.slug}`}>{c.name}</Link>
                   </div>
