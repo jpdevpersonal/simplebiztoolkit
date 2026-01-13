@@ -34,10 +34,10 @@ export default function SiteNavigation() {
     { to: "/products", label: "Products" },
     { to: "/blog", label: "Resources" },
     { to: "/testimonials", label: "Reviews" },
-    { to: "/about", label: "About" },
     { to: "/faq", label: "FAQ" },
     { to: "/help", label: "Help" },
-    { to: "/contact", label: "Contact" }
+    { to: "/contact", label: "Contact" },
+    { to: "/about", label: "About" },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -56,7 +56,7 @@ export default function SiteNavigation() {
             bottom: 0,
             backgroundColor: "rgba(0, 0, 0, 0.55)",
             zIndex: 9998,
-            transition: "opacity 0.3s ease"
+            transition: "opacity 0.3s ease",
           }}
         />
       )}
@@ -76,18 +76,19 @@ export default function SiteNavigation() {
           display: "flex",
           flexDirection: "column",
           boxShadow: isOpen ? "-5px 0 25px rgba(0, 0, 0, 0.15)" : "none",
-          pointerEvents: isOpen ? "auto" : "none"
+          pointerEvents: isOpen ? "auto" : "none",
         }}
       >
         {/* Header */}
         <div
           style={{
-            background: "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
+            background:
+              "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
             color: "white",
             padding: "1.5rem",
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           <div>
@@ -110,12 +111,17 @@ export default function SiteNavigation() {
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              color: "white"
+              color: "white",
             }}
             aria-label="Close menu"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
             </svg>
           </button>
         </div>
@@ -137,7 +143,7 @@ export default function SiteNavigation() {
                   fontWeight: 600,
                   fontSize: "1rem",
                   backgroundColor: "white",
-                  borderBottom: "1px solid #eee"
+                  borderBottom: "1px solid #eee",
                 }}
               >
                 <span
@@ -146,7 +152,7 @@ export default function SiteNavigation() {
                     height: "8px",
                     backgroundColor: "var(--sb-green)",
                     borderRadius: "50%",
-                    marginRight: "1rem"
+                    marginRight: "1rem",
                   }}
                 />
                 {item.label}
@@ -157,7 +163,13 @@ export default function SiteNavigation() {
                   fill="none"
                   style={{ marginLeft: "auto", opacity: 0.4 }}
                 >
-                  <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </NavLink>
             ))}
@@ -179,9 +191,10 @@ export default function SiteNavigation() {
                 fontWeight: 700,
                 fontSize: "1rem",
                 borderRadius: "12px",
-                background: "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
+                background:
+                  "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
                 color: "white",
-                border: "none"
+                border: "none",
               }}
             >
               ⭐ Get Free Template
@@ -202,7 +215,7 @@ export default function SiteNavigation() {
                 borderRadius: "12px",
                 backgroundColor: "white",
                 color: "var(--sb-green)",
-                border: "2px solid var(--sb-green)"
+                border: "2px solid var(--sb-green)",
               }}
             >
               🛒 Shop on Etsy
@@ -216,7 +229,7 @@ export default function SiteNavigation() {
                 borderRadius: "12px",
                 textAlign: "center",
                 border: "1px solid #e0e0e0",
-                fontSize: "13px"
+                fontSize: "13px",
               }}
             >
               <div style={{ color: "var(--sb-green)", fontWeight: 700 }}>
@@ -243,7 +256,7 @@ export default function SiteNavigation() {
             to={item.to}
             style={{
               transition: "all 0.2s ease",
-              fontWeight: 600
+              fontWeight: 600,
             }}
           >
             {item.label}
@@ -256,20 +269,43 @@ export default function SiteNavigation() {
         className="d-lg-none"
         type="button"
         onClick={() => setIsOpen(true)}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsOpen(true); }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") setIsOpen(true);
+        }}
         style={{
           border: "none",
           background: "transparent",
           color: "var(--sb-ink)",
           padding: "0.5rem",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
         aria-label="Open menu"
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-          <div style={{ width: "22px", height: "2px", backgroundColor: "currentColor", borderRadius: "1px" }} />
-          <div style={{ width: "22px", height: "2px", backgroundColor: "currentColor", borderRadius: "1px" }} />
-          <div style={{ width: "22px", height: "2px", backgroundColor: "currentColor", borderRadius: "1px" }} />
+          <div
+            style={{
+              width: "22px",
+              height: "2px",
+              backgroundColor: "currentColor",
+              borderRadius: "1px",
+            }}
+          />
+          <div
+            style={{
+              width: "22px",
+              height: "2px",
+              backgroundColor: "currentColor",
+              borderRadius: "1px",
+            }}
+          />
+          <div
+            style={{
+              width: "22px",
+              height: "2px",
+              backgroundColor: "currentColor",
+              borderRadius: "1px",
+            }}
+          />
         </div>
       </button>
 
