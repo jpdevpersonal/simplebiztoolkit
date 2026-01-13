@@ -9,9 +9,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:ci": "vitest run --reporter=dot"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
