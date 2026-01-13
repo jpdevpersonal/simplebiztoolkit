@@ -25,6 +25,58 @@
 }
 
 /* =============================================
+   Product Image Hover Preview
+   ============================================= */
+
+.product-thumbnail-clickable {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product-thumbnail-clickable {
+    cursor: zoom-in;
+  }
+}
+
+.product-image-preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.product-image-preview-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.product-image-preview-content img {
+  max-width: 100%;
+  max-height: calc(90vh - 2rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* =============================================
    Products Page - Category Grid
    ============================================= */
 
