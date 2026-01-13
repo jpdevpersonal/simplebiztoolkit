@@ -100,7 +100,7 @@ export default function HomePage() {
               What the templates look like
             </h2>
             <p className="text-center sb-muted">
-              A quick preview — the full details and checkout are on Etsy.
+              A quick preview — hover over to see in full.
             </p>
 
             <ProductGrid products={featuredProducts} />
