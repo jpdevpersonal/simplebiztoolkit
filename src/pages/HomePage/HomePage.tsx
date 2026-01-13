@@ -42,10 +42,12 @@ export default function HomePage() {
               <h1 className="sb-hero-title">
                 Essential templates & tools for small business owners
               </h1>
-              <p className="sb-muted fs-5">
-                Simple, ready-to-use downloads that reduce admin, keep you
-                organised, and don’t require tech skills.
-              </p>
+              <div className="row">
+                <p className="sb-muted fs-5">
+                  Simple, ready-to-use downloads that reduce admin, keep you
+                  organised, and don’t require tech skills.
+                </p>
+              </div>
 
               <div className="d-flex gap-2 flex-wrap mt-3">
                 <a
@@ -61,7 +63,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="mt-3">
+              <div className="mt-4">
                 <TrustBar items={trust} />
               </div>
 
@@ -77,19 +79,12 @@ export default function HomePage() {
             </div>
 
             <div className="col-lg-6">
-              <div className="sb-card p-3">
+              <div className="p-3">
                 <img
                   src="/images/hero-image-desk.png"
                   alt="Tools for you small business"
-                  className="img-fluid rounded-4"
+                  className="img-fluid"
                 />
-                <div
-                  className="sb-muted mt-2"
-                  style={{ fontSize: 16, textAlign: "center", fontWeight: 900 }}
-                >
-                  "I run a small business. I like things simple. These tools fit
-                  my life."
-                </div>
               </div>
             </div>
           </div>
