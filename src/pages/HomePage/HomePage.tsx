@@ -95,7 +95,7 @@ export default function HomePage() {
               What the templates look like
             </h2>
             <p className="text-center sb-muted">
-              A quick preview — tap the image to zoom in.
+              A quick preview — tap the image to zoom in
             </p>
 
             <ProductGrid products={featuredProducts} />

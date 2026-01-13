@@ -290,9 +290,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       // Verify messaging that clarifies preview vs full details
-      expect(
-        screen.getByText(/hover over the image to see in full/i)
-      ).toBeInTheDocument();
+      expect(screen.getByText(/tap the image to zoom in/i)).toBeInTheDocument();
     });
   });
 
