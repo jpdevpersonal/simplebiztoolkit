@@ -4,7 +4,7 @@ import TrustBar from "../../components/TrustBar";
 import EmailCaptureForm from "../../components/EmailCaptureForm";
 import TestimonialGrid from "../../components/TestimonialGrid";
 import ProductGrid from "../../components/ProductGrid";
-import { categories } from "../../data/products";
+import { featuredProducts } from "../../data/featured";
 import { LINKS } from "../../app/App";
 
 import "../../styles/home.css";
@@ -16,9 +16,6 @@ export default function HomePage() {
     "Secure checkout via Etsy",
     "Over 3500 sales",
   ];
-
-  // Featured products: first item from first 3 categories
-  const featured = categories.flatMap((c) => c.items.slice(0, 1)).slice(0, 3);
 
   const orgJsonLd = {
     "@context": "https://schema.org",
@@ -106,7 +103,7 @@ export default function HomePage() {
               A quick preview — the full details and checkout are on Etsy.
             </p>
 
-            <ProductGrid products={featured} />
+            <ProductGrid products={featuredProducts} />
           </div>
         </div>
       </section>
