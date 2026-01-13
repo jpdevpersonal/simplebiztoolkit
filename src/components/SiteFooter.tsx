@@ -32,7 +32,6 @@ export default function SiteFooter() {
           <span className="sb-muted">© {year}</span>
         </div>
       </div>
-      ``
     </footer>
   );
 }
