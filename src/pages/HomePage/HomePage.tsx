@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import Seo from "../components/Seo";
-import TrustBar from "../components/TrustBar";
-import EmailCaptureForm from "../components/EmailCaptureForm";
-import TestimonialGrid from "../components/TestimonialGrid";
-import ProductGrid from "../components/ProductGrid";
-import { categories } from "../data/products";
-import { LINKS } from "../app/App";
+import Seo from "../../components/Seo";
+import TrustBar from "../../components/TrustBar";
+import EmailCaptureForm from "../../components/EmailCaptureForm";
+import TestimonialGrid from "../../components/TestimonialGrid";
+import ProductGrid from "../../components/ProductGrid";
+import { categories } from "../../data/products";
+import { LINKS } from "../../app/App";
 
-import "../styles/home.css";
+import "../../styles/home.css";
 
 export default function HomePage() {
   const trust = [
