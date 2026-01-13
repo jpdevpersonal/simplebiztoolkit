@@ -100,7 +100,7 @@ export default function HomePage() {
               What the templates look like
             </h2>
             <p className="text-center sb-muted">
-              A quick preview — hover over to see in full.
+              A quick preview — hover over the image to see in full.
             </p>
 
             <ProductGrid products={featuredProducts} />
