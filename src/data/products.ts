@@ -1,18 +1,5 @@
 // productCategories.ts
-export type ProductCategory = {
-  slug: string;
-  name: string;
-  summary: string;
-  heroImage: string;
-  items: Array<{
-    title: string;
-    problem: string;
-    bullets: string[];
-    image: string;
-    etsyUrl: string;
-    price: string;
-  }>;
-};
+import type { ProductCategory } from "../types/product";
 
 export const categories: ProductCategory[] = [
   {

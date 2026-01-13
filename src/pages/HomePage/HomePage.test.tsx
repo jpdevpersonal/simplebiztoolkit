@@ -13,7 +13,15 @@ vi.mock("react-router-dom", async () => {
   const actual = await vi.importActual("react-router-dom");
   return {
     ...actual,
-    Link: ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => (
+    Link: ({
+      to,
+      children,
+      className,
+    }: {
+      to: string;
+      children: React.ReactNode;
+      className?: string;
+    }) => (
       <a href={to} className={className}>
         {children}
       </a>
@@ -23,7 +31,17 @@ vi.mock("react-router-dom", async () => {
 
 // Mock all child components to test HomePage in isolation
 vi.mock("../../components/Seo", () => ({
-  default: ({ title, description, canonicalPath, jsonLd }: { title: string; description: string; canonicalPath: string; jsonLd: Record<string, unknown> }) => (
+  default: ({
+    title,
+    description,
+    canonicalPath,
+    jsonLd,
+  }: {
+    title: string;
+    description: string;
+    canonicalPath: string;
+    jsonLd: Record<string, unknown>;
+  }) => (
     <div
       data-testid="seo-component"
       data-title={title}
@@ -66,30 +84,23 @@ vi.mock("../../components/ProductGrid", () => ({
   ),
 }));
 
-// Mock the products data
-vi.mock("../../data/products", () => ({
-  categories: [
+// Mock the featured products data
+vi.mock("../../data/featured", () => ({
+  featuredProducts: [
     {
-      slug: "test-category-1",
-      name: "Test Category 1",
-      items: [
-        { title: "Product 1", price: "$10", etsyUrl: "https://etsy.com/1" },
-        { title: "Product 2", price: "$20", etsyUrl: "https://etsy.com/2" },
-      ],
+      title: "Featured Product 1",
+      price: "$10",
+      etsyUrl: "https://etsy.com/1",
     },
     {
-      slug: "test-category-2",
-      name: "Test Category 2",
-      items: [
-        { title: "Product 3", price: "$30", etsyUrl: "https://etsy.com/3" },
-      ],
+      title: "Featured Product 2",
+      price: "$20",
+      etsyUrl: "https://etsy.com/2",
     },
     {
-      slug: "test-category-3",
-      name: "Test Category 3",
-      items: [
-        { title: "Product 4", price: "$40", etsyUrl: "https://etsy.com/4" },
-      ],
+      title: "Featured Product 3",
+      price: "$30",
+      etsyUrl: "https://etsy.com/3",
     },
   ],
 }));
@@ -271,7 +282,7 @@ describe("HomePage", () => {
       // Verify ProductGrid is rendered
       expect(productGrid).toBeInTheDocument();
 
-      // Should display first product from first 3 categories (3 products total)
+      // Should display 3 featured products
       expect(productGrid.getAttribute("data-product-count")).toBe("3");
     });
 
@@ -510,14 +521,12 @@ describe("HomePage", () => {
   });
 
   describe("Data Integration", () => {
-    it("should correctly fetch featured products from categories", () => {
+    it("should correctly display featured products", () => {
       renderHomePage();
 
       const productGrid = screen.getByTestId("product-grid");
 
-      // Should show first product from first 3 categories
-      // Based on our mock: Category 1 has 2 items, Category 2 has 1, Category 3 has 1
-      // Featured should be [Cat1-Item1, Cat2-Item1, Cat3-Item1] = 3 products
+      // Should show 3 featured products from the featured.ts data file
       expect(productGrid.getAttribute("data-product-count")).toBe("3");
     });
   });
