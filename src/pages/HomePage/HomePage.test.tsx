@@ -291,7 +291,7 @@ describe("HomePage", () => {
 
       // Verify messaging that clarifies preview vs full details
       expect(
-        screen.getByText(/full details and checkout are on Etsy/i)
+        screen.getByText(/hover over the image to see in full/i)
       ).toBeInTheDocument();
     });
   });
