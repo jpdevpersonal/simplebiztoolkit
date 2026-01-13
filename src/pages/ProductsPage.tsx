@@ -15,34 +15,44 @@ export default function ProductsPage() {
 
       <section className="sb-section">
         <div className="container">
-          <h1 style={{ fontWeight: 900 }}>Product Categories</h1>
-          <div className="row g-3 mt-2">
-            {categories.map((c) => (
-              <div className="col-md-4" key={c.slug}>
-                <div className="sb-card p-3 h-100 category-card">
-                  <div style={{ fontWeight: 900 }}>
-                    <Link to={`/products/${c.slug}`}>{c.name}</Link>
-                  </div>
-                  <div className="sb-muted mt-1">{c.summary}</div>
-                  <div className="mt-3 d-flex gap-2 flex-wrap">
-                    <Link
-                      className="btn sb-btn-primary"
-                      to={`/products/${c.slug}`}
-                    >
-                      View category
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="products-header">
+            <h1>Product Categories</h1>
+            <p className="sb-muted">
+              Browse our collection of simple, ready-to-use templates
+            </p>
           </div>
 
-          <div className="sb-card p-3 mt-4">
-            <div className="sb-muted" style={{ fontSize: 13 }}>
-              Pro tip: write unique copy here (not copy/paste Etsy
-              descriptions). This is what ranks on Google.
-              :contentReference[oaicite:10]
-            </div>
+          <div className="category-grid">
+            {categories.map((c) => (
+              <Link
+                to={`/products/${c.slug}`}
+                className="category-card-link"
+                key={c.slug}
+              >
+                <article className="category-card">
+                  <h2 className="category-card-title">{c.name}</h2>
+                  <p className="category-card-summary">{c.summary}</p>
+                  <span className="category-card-cta">
+                    Browse templates
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 3l5 5-5 5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </article>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
