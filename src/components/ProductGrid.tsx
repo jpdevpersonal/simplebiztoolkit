@@ -38,8 +38,10 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 </div>
               </div>
               <div className="p-3">
-                <div style={{ fontWeight: 900 }}>{p.title}</div>
-                <div className="sb-muted mt-1">{p.problem}</div>
+                {/* <div style={{ fontWeight: 900 }}>{p`.title}</div> */}
+                <div className="sb-muted mt-1" style={{ fontWeight: 900 }}>
+                  {p.problem}
+                </div>
                 <ul className="sb-muted mt-2 mb-3">
                   {p.bullets.map((b) => (
                     <li key={b}>{b}</li>

@@ -18,7 +18,7 @@ export const categories: ProductCategory[] = [
           "Practical examples",
           "Instant download PDF",
         ],
-        image: "",
+        image: "/images/products/guides/ai-for-small-business.webp",
         etsyUrl:
           "https://www.etsy.com/listing/4361641425/ai-for-small-business-owners-guide-save",
         price: "$3.36",
@@ -205,7 +205,7 @@ export const categories: ProductCategory[] = [
         problem:
           "You’re losing track of who paid, who hasn’t, and what’s outstanding.",
         bullets: ["Track due vs paid", "Client history", "Printable PDF"],
-        image: "",
+        image: "/images/products/payment-tracker/payment-tracker-pay-02.webp",
         etsyUrl:
           "https://www.etsy.com/listing/4328745492/payment-tracker-simple-printable-fee",
         price: "$2.04",
@@ -219,7 +219,8 @@ export const categories: ProductCategory[] = [
           "Outstanding amounts",
           "Printable + easy",
         ],
-        image: "",
+        image:
+          "/images/products/payment-tracker/payment-tracker-a4-pay-01.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1302357238/payment-tracker-and-client-payment",
         price: "$2.04",
@@ -229,7 +230,8 @@ export const categories: ProductCategory[] = [
           "Payment Tracker – Client Payment History and Fee Payment Tracker (A4 + US Letter)",
         problem: "You need a clear fee tracker you can file per client.",
         bullets: ["Client-based tracking", "A4 + US Letter", "Printable PDF"],
-        image: "",
+        image:
+          "/images/products/payment-tracker/payment-ledger-a4-monthly.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1294509158/payment-tracker-client-payment-history",
         price: "$1.97",
@@ -305,7 +307,8 @@ export const categories: ProductCategory[] = [
           "Weekly tracking",
           "Small business ready",
         ],
-        image: "",
+        image:
+          "/images/products/employee-timesheet/employee-weekly-timesheet-a4-1.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1359275270/printable-employee-time-sheet-template",
         price: "$2.00",
@@ -314,9 +317,10 @@ export const categories: ProductCategory[] = [
         title:
           "Printable Employee Time Sheet Template – Hours Worked + Weekly Tracker (Digital Download)",
         problem:
-          "You want a fresh version of a classic weekly time sheet layout.",
+          "You want a version of a classic weekly time sheet layout that records break time.",
         bullets: ["Printable", "Weekly structure", "Quick to fill in"],
-        image: "",
+        image:
+          "/images/products/employee-timesheet/employee-weekly-timesheet-a4-3.webp",
         etsyUrl:
           "https://www.etsy.com/listing/4436102417/printable-employee-time-sheet-template",
         price: "$2.00",
@@ -326,7 +330,7 @@ export const categories: ProductCategory[] = [
           "Weekly Employee Time Sheet – Editable Excel Spreadsheet (Printable)",
         problem: "You want to edit totals quickly and keep digital copies.",
         bullets: ["Editable Excel", "Printable", "Great for payroll prep"],
-        image: "",
+        image: "/images/products/employee-timesheet/timesheet-excel.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1765516952/weekly-employee-time-sheet-time-tracker",
         price: "$2.11",
@@ -337,7 +341,8 @@ export const categories: ProductCategory[] = [
         problem:
           "You need a simple weekly tracker for contractors or short-term staff.",
         bullets: ["Weekly tracker", "Printable PDF", "Contractor-friendly"],
-        image: "",
+        image:
+          "/images/products/employee-timesheet/weekly-employee-timeshet-6-colours.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1514062037/printable-employee-time-sheet-weekly",
         price: "$2.53",
@@ -347,7 +352,8 @@ export const categories: ProductCategory[] = [
           "Printable Freelancer Time Tracker – Work Time Sheet / Daily Hours Tracker",
         problem: "You need to track billable hours without overthinking it.",
         bullets: ["Daily hours tracking", "Freelancer-friendly", "Printable"],
-        image: "",
+        image:
+          "/images/products/employee-timesheet/employee-timesheet-a4-2.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1388832247/printable-freelancer-time-tracker-work",
         price: "$2.00",
@@ -367,7 +373,8 @@ export const categories: ProductCategory[] = [
           "School Attendance Record Sheet – Class Attendance Register (Monthly) (A4 Landscape)",
         problem: "You need a clear monthly register that’s easy to review.",
         bullets: ["Monthly register", "A4 landscape", "Printable"],
-        image: "",
+        image:
+          "/images/products/attendance/school-attendance-register-school-att-01.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1670351760/school-attendance-record-sheet-class",
         price: "$2.04",
@@ -378,17 +385,19 @@ export const categories: ProductCategory[] = [
         problem:
           "You need a general-purpose attendance log that works anywhere.",
         bullets: ["Simple grid format", "Printable", "Multi-use"],
-        image: "",
+        image:
+          "/images/products/attendance/attendance-record-person-att-person-01.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1252218381/attendance-sheet-printable-attendance",
         price: "$2.04",
       },
       {
         title:
-          "Attendance Tracker – Printable Attendance Sheet (Home School / Conference / Event)",
+          "Attendance Tracker – Printable Attendance Sheet for Conference and Events)",
         problem: "You want an attendance log for events and sessions.",
         bullets: ["Event-friendly", "Printable", "Easy check-off"],
-        image: "",
+        image:
+          "/images/products/attendance/attendance-register-club-attend-club-event.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1201911266/attendance-tracker-printable-attendance",
         price: "$2.01",
@@ -398,14 +407,14 @@ export const categories: ProductCategory[] = [
           "Attendance Tracker – Printable Attendance Record Sheet (Monthly Format)",
         problem: "You want a monthly-format tracker you can file by month.",
         bullets: ["Monthly format", "Printable PDF", "Simple layout"],
-        image: "",
+        image:
+          "/images/products/attendance/attendance-register-horizontal-monthly-att-monthly.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1179350757/attendance-tracker-printable-attendance",
         price: "$1.97",
       },
     ],
   },
-
   {
     slug: "petty-cash",
     name: "Petty Cash",
