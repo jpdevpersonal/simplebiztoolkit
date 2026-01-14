@@ -38,7 +38,6 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 </div>
               </div>
               <div className="p-3">
-                {/* <div style={{ fontWeight: 900 }}>{p`.title}</div> */}
                 <div className="sb-muted mt-1" style={{ fontWeight: 900 }}>
                   {p.problem}
                 </div>
