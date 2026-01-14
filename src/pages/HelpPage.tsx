@@ -12,9 +12,36 @@ export default function HelpPage() {
       <section className="sb-section">
         <div className="container" style={{ maxWidth: 900 }}>
           <h1 style={{ fontWeight: 900 }}>Help</h1>
-          <p className="sb-muted fs-5">
+          <h3 className="sb-muted fs-5">
             This is where you can get help on any problems you might be having.
-          </p>
+          </h3>
+          <div className="row p-5">
+            <p>
+              If you are having trouble finding your digital downloads, please
+              try the following:
+            </p>{" "}
+            <p>
+              If you purchased using your Etsy account, the downloads can be
+              found by going into your account and selecting Purchases and
+              Reviews. You should see your items there with a Download Files
+              button to the right.
+            </p>{" "}
+            <p>
+              Please check you are logging into the same Etsy account that you
+              used to buy with.
+            </p>{" "}
+            <p>
+              If you purchased as a guest, you'll find a link to download your
+              files in the receipt email sent after your purchase. This may take
+              a few minutes, and you may need to check all folders if using
+              Gmail.
+            </p>{" "}
+            <p>
+              Also, please note that Etsy does not currently support downloading
+              from their mobile app. Please log in to the Etsy website to
+              download.
+            </p>
+          </div>
         </div>
       </section>
     </>
