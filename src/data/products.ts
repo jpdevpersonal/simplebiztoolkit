@@ -238,7 +238,6 @@ export const categories: ProductCategory[] = [
       },
     ],
   },
-
   {
     slug: "rent-payment-ledger",
     name: "Rent Payment Ledger",
