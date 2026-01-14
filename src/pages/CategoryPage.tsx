@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import ProductGrid from "../components/ProductGrid";
 import { categories } from "../data/products";
@@ -34,6 +34,28 @@ export default function CategoryPage() {
 
       <section className="sb-section">
         <div className="container">
+          <nav className="sb-breadcrumb" aria-label="Breadcrumb">
+            <Link to="/products" className="sb-breadcrumb-link">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                className="sb-breadcrumb-icon"
+              >
+                <path
+                  d="M10 3l-5 5 5 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Back to Categories
+            </Link>
+          </nav>
+
           <div className="row g-3 align-items-center">
             <div className="col-lg-7">
               <h1 style={{ fontWeight: 900 }}>{cat.name}</h1>
