@@ -88,6 +88,7 @@ jobs:
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    needs: build_and_deploy_job
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
