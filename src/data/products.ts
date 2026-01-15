@@ -39,7 +39,8 @@ export const categories: ProductCategory[] = [
         problem:
           "You need a clean way to track income/expenses without a complicated system.",
         bullets: ["General ledger layout", "Print anytime", "A4 + US Letter"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-stat-balance-month-al02.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1194290286/printable-accounting-ledger-general",
         price: "$1.93",
@@ -54,7 +55,8 @@ export const categories: ProductCategory[] = [
           "Printable",
           "Ideal for small business bookkeeping",
         ],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/fillable-account-ledger-with-check-box.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1366816474/accounting-ledger-sheet-fillable-and",
         price: "$3.83",
@@ -84,7 +86,8 @@ export const categories: ProductCategory[] = [
           "Accounting Ledger Template – Yearly Accounts + General Ledger Sheet (Columnar Paper)",
         problem: "You need a ledger that works across any financial period.",
         bullets: ["Yearly-style structure", "Column layout", "A4 + US Letter"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-al-year-02.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1366270922/accounting-ledger-template-yearly",
         price: "$1.97",
@@ -108,7 +111,8 @@ export const categories: ProductCategory[] = [
           "Accounting Ledger – General Ledger Sheets (6 Colors, Wide Margins)",
         problem: "You want color options and binder-friendly margins.",
         bullets: ["6 color set", "Wide margins", "Printable columnar paper"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-six-colour-bundle.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1263178836/accounting-ledger-general-ledger-sheets",
         price: "$2.82",
