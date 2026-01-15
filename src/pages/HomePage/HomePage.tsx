@@ -49,26 +49,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="shop-button-hollow d-flex gap-2 flex-wrap mt-3">
-                <Link
-                  to="/products"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "0.rem",
-                    padding: "0.5rem",
-                    textDecoration: "none",
-                    fontWeight: 700,
-                    fontSize: "1rem",
-                    borderRadius: "12px",
-                    backgroundColor: "white",
-                    color: "var(--sb-green)",
-                    border: "2px solid var(--sb-green)",
-                  }}
-                >
+              <div className="d-flex gap-2 flex-wrap mt-3">
+                <Link to="/products" className="btn sb-btn-primary">
                   Browse All Products
                 </Link>
               </div>
@@ -78,14 +60,23 @@ export default function HomePage() {
               </div>
 
               {/* One strong testimonial near CTA */}
-              <div className="sb-card p-3 mt-4">
-                <div style={{ fontWeight: 900 }}>
+              <blockquote
+                className="sb-card p-3 mt-4"
+                style={{ borderLeft: "3px solid var(--sb-green)" }}
+              >
+                <p
+                  className="mb-1"
+                  style={{ fontWeight: 600, fontStyle: "italic" }}
+                >
                   "Saved me hours each month."
-                </div>
-                <div className="sb-muted" style={{ fontSize: 13 }}>
-                  — Verified Etsy buyer (placeholder)
-                </div>
-              </div>
+                </p>
+                <cite
+                  className="sb-muted"
+                  style={{ fontSize: "0.8125rem", fontStyle: "normal" }}
+                >
+                  — Verified Etsy buyer
+                </cite>
+              </blockquote>
             </div>
 
             <div className="col-lg-6">
@@ -100,12 +91,15 @@ export default function HomePage() {
           </div>
 
           {/* Product previews (proof) */}
-          <div className="sb-section pt-4 pb-0">
-            <h2 className="text-center" style={{ fontWeight: 900 }}>
+          <div className="sb-section pt-5 pb-0">
+            <h2
+              className="text-center"
+              style={{ fontWeight: 700, marginBottom: "0.5rem" }}
+            >
               What the templates look like
             </h2>
-            <p className="text-center sb-muted">
-              A quick preview — tap the image to zoom in
+            <p className="text-center sb-muted mb-4">
+              Tap any image to zoom in, or click to view on Etsy
             </p>
 
             <ProductGrid products={featuredProducts} />
@@ -117,36 +111,60 @@ export default function HomePage() {
       <section className="sb-section sb-section-alt">
         <div className="container">
           <div className="text-center mb-4">
-            <h2 style={{ fontWeight: 900 }}>Designed to be simple</h2>
+            <h2 style={{ fontWeight: 700 }}>Designed to be simple</h2>
             <p className="sb-muted">
-              Clear layouts, printable formats, and Essential categories.
+              Clear layouts, printable formats, and essential categories.
             </p>
           </div>
 
           <div className="row g-3">
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Essential templates</div>
-                <div className="sb-muted">
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Essential templates
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Tracking, planning, and admin — without overcomplication.
-                </div>
+                </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Simple systems</div>
-                <div className="sb-muted">
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Simple systems
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Repeatable formats that keep you consistent.
-                </div>
+                </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Real-world use</div>
-                <div className="sb-muted">
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Real-world use
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Made for small business owners, solo operators, and online
                   sellers.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -158,11 +176,8 @@ export default function HomePage() {
         <div className="container">
           <div className="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
             <div>
-              <h2 style={{ fontWeight: 900 }}>What customers say</h2>
-              <p className="sb-muted mb-0">
-                Social proof reduces hesitation. Put it right next to the
-                action.
-              </p>
+              <h2 style={{ fontWeight: 700 }}>What customers say</h2>
+              <p className="sb-muted mb-0">Real feedback from Etsy buyers.</p>
             </div>
             <Link className="btn sb-btn-ghost" to="/testimonials">
               Read more reviews
@@ -177,7 +192,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shop on Etsy (secure checkout)
+              Browse the full shop on Etsy
             </a>
           </div>
         </div>
@@ -187,16 +202,18 @@ export default function HomePage() {
       <section className="sb-section sb-section-alt">
         <div className="container">
           <div className="sb-card p-4">
-            <div className="row align-items-center g-3">
+            <div className="row align-items-center g-4">
               <div className="col-lg-6">
-                <h2 style={{ fontWeight: 900 }}>Get a free starter template</h2>
-                <p className="sb-muted mb-2">
-                  A quick win you can use today. This is the start of your email
-                  list funnel.
+                <h2 style={{ fontWeight: 700 }}>Get a free starter template</h2>
+                <p className="sb-muted mb-3">
+                  Try before you buy — a practical template you can use today.
                 </p>
-                <ul className="sb-muted mb-0">
-                  <li>Instant download link (via email)</li>
-                  <li>No spam — helpful tips + new releases</li>
+                <ul
+                  className="sb-muted mb-0"
+                  style={{ paddingLeft: "1.25rem" }}
+                >
+                  <li>Instant download link via email</li>
+                  <li>No spam — just helpful tips & new releases</li>
                   <li>Occasional subscriber-only discounts</li>
                 </ul>
               </div>

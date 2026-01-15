@@ -218,8 +218,10 @@ describe("HomePage", () => {
     it("should render secondary CTA linking to products page", () => {
       renderHomePage();
 
-      // Find the "Browse products" link
-      const browseLink = screen.getByRole("link", { name: /Browse products/i });
+      // Find the "Browse All Products" link
+      const browseLink = screen.getByRole("link", {
+        name: /Browse All Products/i,
+      });
 
       // Verify it links to the products page
       expect(browseLink).toBeInTheDocument();
@@ -290,7 +292,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       // Verify messaging that clarifies preview vs full details
-      expect(screen.getByText(/tap the image to zoom in/i)).toBeInTheDocument();
+      expect(screen.getByText(/click to view on Etsy/i)).toBeInTheDocument();
     });
   });
 
@@ -363,12 +365,17 @@ describe("HomePage", () => {
     it("should include CTA to shop on Etsy in testimonials section", () => {
       renderHomePage();
 
-      // Find all "Shop on Etsy" links (there are multiple on the page)
-      const etsyLinks = screen.getAllByRole("link", { name: /Shop on Etsy/i });
+      // Find the "Browse the full shop on Etsy" link
+      const etsyLink = screen.getByRole("link", {
+        name: /Browse the full shop on Etsy/i,
+      });
 
-      // Verify at least one exists in the testimonials section
-      // (checking that we have multiple CTAs throughout the page)
-      expect(etsyLinks.length).toBeGreaterThan(1);
+      // Verify the CTA exists with correct link
+      expect(etsyLink).toBeInTheDocument();
+      expect(etsyLink).toHaveAttribute(
+        "href",
+        "https://www.etsy.com/shop/simplebiztoolkit"
+      );
     });
   });
 
@@ -387,9 +394,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       // Check for key messaging
-      expect(
-        screen.getByText(/A quick win you can use today/i)
-      ).toBeInTheDocument();
+      expect(screen.getByText(/Try before you buy/i)).toBeInTheDocument();
     });
 
     it("should list lead magnet benefits", () => {
@@ -482,7 +487,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       const productsLink = screen.getByRole("link", {
-        name: /Browse products/i,
+        name: /Browse All Products/i,
       });
       const testimonialsLink = screen.getByRole("link", {
         name: /Read more reviews/i,

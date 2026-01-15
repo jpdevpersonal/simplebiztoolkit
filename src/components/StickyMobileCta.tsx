@@ -6,28 +6,14 @@ export default function StickyMobileCta() {
     <div className="sb-sticky-cta">
       <div className="container d-flex gap-2">
         <a
-          className="shop-button-hollow"
+          className="btn sb-btn-primary flex-fill"
           href={LINKS.etsyShopUrl}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0.rem",
-            padding: "0.5rem",
-            textDecoration: "none",
-            fontWeight: 700,
-            fontSize: "1rem",
-            borderRadius: "12px",
-            backgroundColor: "white",
-            color: "var(--sb-green)",
-            border: "2px solid var(--sb-green)",
-          }}
         >
-          🛒 Shop on Etsy
+          Shop on Etsy
         </a>
-        <Link className="btn sb-btn-ghost flex-fill" to={LINKS.freebiePage}>
+        <Link className="btn sb-btn-ghost" to={LINKS.freebiePage}>
           Free template
         </Link>
       </div>

@@ -7,8 +7,8 @@ export default function SiteHeader() {
     <header
       className="sticky-top sb-site-header"
       style={{
-        background: "rgba(255,255,255,0.92)",
-        backdropFilter: "blur(10px)",
+        background: "rgba(255,255,255,0.96)",
+        backdropFilter: "blur(12px)",
         borderBottom: "1px solid var(--sb-border)",
       }}
     >
@@ -20,14 +20,14 @@ export default function SiteHeader() {
           <img
             src="/images/simple-biz-toolkit-logo.png"
             alt="Simple Biz Toolkit"
-            width={80}
-            height={80}
-            style={{ borderRadius: 12, border: "1px solid var(--sb-border)" }}
+            width={72}
+            height={72}
+            style={{ borderRadius: 10, border: "1px solid var(--sb-border)" }}
           />
           <div>
             <div className="sb-brand-title">Simple Biz Toolkit</div>
-            <div className="sb-muted" style={{ fontSize: 12.5 }}>
-              Essential Templates & Tools for Small Business Owners
+            <div className="sb-muted" style={{ fontSize: "0.75rem" }}>
+              Templates & Tools for Small Business
             </div>
           </div>
         </Link>
@@ -39,30 +39,16 @@ export default function SiteHeader() {
             to={LINKS.freebiePage}
             className="btn sb-btn-ghost d-none d-sm-inline-flex"
           >
-            Get free template
+            Free template
           </Link>
 
           <a
-            className="shop-button-hollow"
+            className="btn sb-btn-primary d-none d-md-inline-flex"
             href={LINKS.etsyShopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "0.rem",
-              padding: "0.5rem",
-              textDecoration: "none",
-              fontWeight: 700,
-              fontSize: "1rem",
-              borderRadius: "12px",
-              backgroundColor: "white",
-              color: "var(--sb-green)",
-              border: "2px solid var(--sb-green)",
-            }}
           >
-            🛒 Shop on Etsy
+            Shop on Etsy
           </a>
         </div>
       </div>
