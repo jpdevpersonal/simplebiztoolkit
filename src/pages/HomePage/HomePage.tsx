@@ -79,7 +79,7 @@ export default function HomePage() {
               </blockquote>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 d-none d-lg-block">
               <div className="p-3 d-flex justify-content-center">
                 <img
                   src="/images/hero-image-desk.png"
