@@ -65,6 +65,15 @@ a:hover {
   color: var(--sb-muted);
 }
 
+/* Global heading color - use brand blue for consistent headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--sb-brand-blue);
+}
+
 /* Header layout: prevent mobile horizontal overflow */
 .sb-site-header-inner {
   flex-wrap: wrap;

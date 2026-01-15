@@ -4,6 +4,7 @@ import { routes } from "./routes";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import StickyMobileCta from "../components/StickyMobileCta";
+import ScrollToTop from "../components/ScrollToTop";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const LINKS = {
@@ -17,7 +18,10 @@ export default function App() {
 
   return (
     <>
-      <a className="sb-skip-link" href="#content">Skip to content</a>
+      <ScrollToTop />
+      <a className="sb-skip-link" href="#content">
+        Skip to content
+      </a>
 
       <SiteHeader />
       <main id="content">{element}</main>
