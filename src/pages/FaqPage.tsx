@@ -11,13 +11,18 @@ export default function FaqPage() {
       />
 
       <section className="sb-section">
-        <div className="container" style={{ maxWidth: 900 }}>
-          <h1 style={{ fontWeight: 900 }}>FAQ</h1>
-          <p className="sb-muted">
-            FAQs reduce hesitation and can rank for “People also ask” queries. :contentReference[oaicite:18]
-          </p>
+        <div className="container">
+          <div className="products-header">
+            <h1 style={{ fontWeight: 900 }}>FAQ</h1>
+            <p className="sb-muted">
+              FAQs reduce hesitation and can rank for "People also ask" queries.
+              :contentReference[oaicite:18]
+            </p>
+          </div>
 
-          <FaqAccordion />
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <FaqAccordion />
+          </div>
         </div>
       </section>
     </>

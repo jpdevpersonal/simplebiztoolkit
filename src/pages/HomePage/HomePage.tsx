@@ -79,7 +79,7 @@ export default function HomePage() {
             </div>
 
             <div className="col-lg-6">
-              <div className="p-3">
+              <div className="p-3 d-flex justify-content-center">
                 <img
                   src="/images/hero-image-desk.png"
                   alt="Tools for you small business"
