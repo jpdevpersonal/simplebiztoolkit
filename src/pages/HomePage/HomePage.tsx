@@ -83,7 +83,7 @@ export default function HomePage() {
                 <img
                   src="/images/hero-image-desk.png"
                   alt="Tools for you small business"
-                  className="img-fluid"
+                  className="img-fluid hero-image"
                 />
               </div>
             </div>

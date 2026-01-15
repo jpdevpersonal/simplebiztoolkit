@@ -21,5 +21,15 @@
 }
 
 @media (max-width: 576px) {
-  body { padding-bottom: 72px; } /* space for sticky CTA bar */
+  body {
+    padding-bottom: 72px;
+  } /* space for sticky CTA bar */
+}
+
+/* Hero image sizing moved from inline styles */
+.sb-hero .hero-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
 }
