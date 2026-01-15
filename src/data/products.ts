@@ -458,7 +458,8 @@ export const categories: ProductCategory[] = [
           "GoodNotes-friendly",
           "Clean layout",
         ],
-        image: "",
+        image:
+          "/images/products/expense-tracker/expenses-tracker-no-total.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1662236236/expense-tracker-income-and-expense-sheet",
         price: "$1.86",
@@ -469,7 +470,8 @@ export const categories: ProductCategory[] = [
         problem:
           "You need a straightforward spending log to stop leaks in your budget.",
         bullets: ["Spending-focused", "Income + expense", "Printable PDF"],
-        image: "",
+        image:
+          "/images/products/expense-tracker/expenses-tracker-month-start-bal.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1245251867/spending-tracker-printable-income-and",
         price: "$1.93",
@@ -483,7 +485,7 @@ export const categories: ProductCategory[] = [
           "Editable",
           "Instant download",
         ],
-        image: "",
+        image: "/images/products/expense-tracker/bill-tracker-quarterly.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1466892677/bill-payment-tracker-editable-yearly",
         price: "$1.69",
