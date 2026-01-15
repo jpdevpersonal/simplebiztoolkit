@@ -433,14 +433,24 @@ export const categories: ProductCategory[] = [
           "Petty Cash Log – Printable Cash Flow Sheet (Small Business Bookkeeping)",
         problem: "Small cash purchases pile up and you lose track of them.",
         bullets: ["Cash in/out tracking", "Printable PDF", "Simple totals"],
-        image: "",
+        image: "/images/products/petty-cash/petty-cash-log-a4-single.webp",
+        etsyUrl:
+          "https://www.etsy.com/listing/1230155489/petty-cash-log-printable-cash-flow-sheet",
+        price: "$1.97",
+      },
+      {
+        title:
+          "Petty Cash Log – Fillable Printable Cash Flow Sheet (Auto Calcultating Balance)",
+        problem: "Fillable and printable so you can easily track cash flow.",
+        bullets: ["Cash in/out tracking", "Printable PDF", "Simple totals"],
+        image:
+          "/images/products/petty-cash/fillable-petty-cash-log-sheet-image.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1230155489/petty-cash-log-printable-cash-flow-sheet",
         price: "$1.97",
       },
     ],
   },
-
   {
     slug: "expense-and-spending",
     name: "Expense & Spending Trackers",
