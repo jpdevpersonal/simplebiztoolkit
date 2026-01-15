@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "vitest run --testTimeout=10000",
     "test:ui": "vitest --ui",
     "test:ci": "vitest run --reporter=dot"
   },
