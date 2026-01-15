@@ -62,7 +62,7 @@ export default function HomePage() {
               {/* One strong testimonial near CTA */}
               <blockquote
                 className="sb-card p-3 mt-4"
-                style={{ borderLeft: "3px solid var(--sb-green)" }}
+                style={{ borderLeft: "3px solid var(--sb-brand-blue)" }}
               >
                 <p
                   className="mb-1"
@@ -79,8 +79,8 @@ export default function HomePage() {
               </blockquote>
             </div>
 
-            <div className="col-lg-6 d-none d-lg-block">
-              <div className="p-3 d-flex justify-content-center">
+            <div className="col-lg-6">
+              <div className="hero-image-wrapper d-flex justify-content-center">
                 <img
                   src="/images/hero-image-desk.png"
                   alt="Tools for you small business"

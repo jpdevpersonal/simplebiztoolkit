@@ -26,10 +26,27 @@
   } /* space for sticky CTA bar */
 }
 
-/* Hero image sizing moved from inline styles */
+/* Hero image sizing */
 .sb-hero .hero-image {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 720px;
+}
+
+.hero-image-wrapper {
+  padding: 1rem;
+}
+
+/* Mobile: compact hero image after content */
+@media (max-width: 991px) {
+  .hero-image-wrapper {
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+
+  .sb-hero .hero-image {
+    max-width: 280px;
+    opacity: 0.9;
+  }
 }

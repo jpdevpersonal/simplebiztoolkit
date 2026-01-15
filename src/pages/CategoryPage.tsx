@@ -63,7 +63,7 @@ export default function CategoryPage() {
 
               <div
                 className="sb-card p-3"
-                style={{ borderLeft: "3px solid var(--sb-green)" }}
+                style={{ borderLeft: "3px solid var(--sb-brand-blue)" }}
               >
                 <h2
                   style={{

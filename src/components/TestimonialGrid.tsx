@@ -7,7 +7,7 @@ export default function TestimonialGrid() {
         <div className="col-md-4" key={t.quote}>
           <blockquote
             className="sb-card p-3 h-100"
-            style={{ borderLeft: "3px solid var(--sb-green)", margin: 0 }}
+            style={{ borderLeft: "3px solid var(--sb-brand-blue)", margin: 0 }}
           >
             <p
               style={{
