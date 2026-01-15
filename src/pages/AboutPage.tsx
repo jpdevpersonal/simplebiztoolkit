@@ -1,5 +1,5 @@
 import Seo from "../components/Seo";
-import { LINKS } from "../app/App";
+import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   return (
@@ -97,17 +97,27 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-4 d-flex gap-2 flex-wrap">
-              <a
-                className="btn sb-btn-primary"
-                href={LINKS.etsyShopUrl}
+              <Link
+                to="/products"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "0.rem",
+                  padding: "0.5rem",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: "1rem",
+                  borderRadius: "12px",
+                  backgroundColor: "white",
+                  color: "var(--sb-green)",
+                  border: "2px solid var(--sb-green)",
+                }}
               >
-                Shop on Etsy
-              </a>
-              <a className="btn sb-btn-ghost" href="/products">
-                Browse products
-              </a>
+                Browse All Products
+              </Link>
             </div>
           </div>
         </div>

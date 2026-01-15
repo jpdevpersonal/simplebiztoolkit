@@ -4,9 +4,19 @@ import SiteNavigation from "./SiteNavigation";
 
 export default function SiteHeader() {
   return (
-    <header className="sticky-top sb-site-header" style={{ background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--sb-border)" }}>
+    <header
+      className="sticky-top sb-site-header"
+      style={{
+        background: "rgba(255,255,255,0.92)",
+        backdropFilter: "blur(10px)",
+        borderBottom: "1px solid var(--sb-border)",
+      }}
+    >
       <div className="container py-3 d-flex align-items-center justify-content-between gap-3 sb-site-header-inner">
-        <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none sb-site-header-brand">
+        <Link
+          to="/"
+          className="d-flex align-items-center gap-2 text-decoration-none sb-site-header-brand"
+        >
           <img
             src="/images/simple-biz-toolkit-logo.png"
             alt="Simple Biz Toolkit"
@@ -25,17 +35,34 @@ export default function SiteHeader() {
         <SiteNavigation />
 
         <div className="d-flex align-items-center gap-2 sb-site-header-actions">
-          <Link to={LINKS.freebiePage} className="btn sb-btn-ghost d-none d-sm-inline-flex">
+          <Link
+            to={LINKS.freebiePage}
+            className="btn sb-btn-ghost d-none d-sm-inline-flex"
+          >
             Get free template
           </Link>
 
           <a
-            className="btn sb-btn-primary"
+            className="shop-button-hollow"
             href={LINKS.etsyShopUrl}
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.rem",
+              padding: "0.5rem",
+              textDecoration: "none",
+              fontWeight: 700,
+              fontSize: "1rem",
+              borderRadius: "12px",
+              backgroundColor: "white",
+              color: "var(--sb-green)",
+              border: "2px solid var(--sb-green)",
+            }}
           >
-            Shop on Etsy
+            🛒 Shop on Etsy
           </a>
         </div>
       </div>

@@ -200,6 +200,7 @@ export default function SiteNavigation() {
               ⭐ Get Free Template
             </Link>
             <a
+              className="shop-button-hollow"
               href={LINKS.etsyShopUrl}
               target="_blank"
               rel="noopener noreferrer"
