@@ -79,9 +79,6 @@ export default function CategoryPage() {
                 >
                   Shop on Etsy
                 </a>
-                <a className="btn sb-btn-ghost" href="#items">
-                  See templates
-                </a>
               </div>
             </div>
 
