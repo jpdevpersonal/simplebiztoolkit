@@ -39,7 +39,8 @@ export const categories: ProductCategory[] = [
         problem:
           "You need a clean way to track income/expenses without a complicated system.",
         bullets: ["General ledger layout", "Print anytime", "A4 + US Letter"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-stat-balance-month-al02.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1194290286/printable-accounting-ledger-general",
         price: "$1.93",
@@ -54,27 +55,29 @@ export const categories: ProductCategory[] = [
           "Printable",
           "Ideal for small business bookkeeping",
         ],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/fillable-account-ledger-with-check-box.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1366816474/accounting-ledger-sheet-fillable-and",
         price: "$3.83",
       },
-      {
-        title:
-          "Accounting Ledger (Fillable + Printable) – Accounts Template (Instant Download)",
-        problem: "You want a straightforward ledger that’s quick to complete.",
-        bullets: ["Fillable PDF", "Simple layout", "Instant download"],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1683213810/accounting-ledger-fillable-and-printable",
-        price: "$3.38",
-      },
+      // {
+      //   title:
+      //     "Accounting Ledger (Fillable + Printable) – Accounts Template (Instant Download)",
+      //   problem: "You want a straightforward ledger that’s quick to complete.",
+      //   bullets: ["Fillable PDF", "Simple layout", "Instant download"],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1683213810/accounting-ledger-fillable-and-printable",
+      //   price: "$3.38",
+      // },
       {
         title:
           "Accounting Ledger (Fillable + Printable) – Alternating Rows Version",
         problem: "You want a ledger that’s easier to read line-by-line.",
         bullets: ["Alternating row styling", "Fillable PDF", "Printable"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/fillable-accounting-ledger-alternating.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1683205210/accounting-ledger-fillable-and-printable",
         price: "$3.83",
@@ -84,31 +87,33 @@ export const categories: ProductCategory[] = [
           "Accounting Ledger Template – Yearly Accounts + General Ledger Sheet (Columnar Paper)",
         problem: "You need a ledger that works across any financial period.",
         bullets: ["Yearly-style structure", "Column layout", "A4 + US Letter"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-al-year-02.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1366270922/accounting-ledger-template-yearly",
         price: "$1.97",
       },
-      {
-        title:
-          "Accounting Ledger and General Ledger Sheet – Income/Expense + Money Tracker (A5/Half Letter)",
-        problem: "You want a compact ledger for binders/notebooks.",
-        bullets: [
-          "Smaller paper sizes",
-          "Income/expense friendly",
-          "Clean columns",
-        ],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1592780981/accounting-ledger-and-general-ledger",
-        price: "$1.82",
-      },
+      // {
+      //   title:
+      //     "Accounting Ledger and General Ledger Sheet – Income/Expense + Money Tracker (A5/Half Letter)",
+      //   problem: "You want a compact ledger for binders/notebooks.",
+      //   bullets: [
+      //     "Smaller paper sizes",
+      //     "Income/expense friendly",
+      //     "Clean columns",
+      //   ],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1592780981/accounting-ledger-and-general-ledger",
+      //   price: "$1.82",
+      // },
       {
         title:
           "Accounting Ledger – General Ledger Sheets (6 Colors, Wide Margins)",
         problem: "You want color options and binder-friendly margins.",
         bullets: ["6 color set", "Wide margins", "Printable columnar paper"],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-six-colour-bundle.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1263178836/accounting-ledger-general-ledger-sheets",
         price: "$2.82",
@@ -123,7 +128,8 @@ export const categories: ProductCategory[] = [
           "Fillable + printable",
           "Bookkeeping friendly",
         ],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/fillable-accounting-ledger-yearly.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1384315830/accounting-ledger-and-money-tracker",
         price: "$3.83",
@@ -137,59 +143,60 @@ export const categories: ProductCategory[] = [
           "Printable",
           "Simple bookkeeping layout",
         ],
-        image: "",
+        image:
+          "/images/products/accounting-ledger/accounting-ledger-start-balance-month-v2.webp",
         etsyUrl:
           "https://www.etsy.com/listing/1417451512/printable-accounting-ledger-money",
         price: "$1.97",
       },
-      {
-        title: "Printable Accounting General Ledger Sheet – Monthly Format",
-        problem: "You want a monthly ledger that’s easy to file and review.",
-        bullets: ["Monthly format", "Printable", "A4 + US Letter"],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1222780541/printable-accounting-general-ledger",
-        price: "$1.97",
-      },
-      {
-        title:
-          "Yearly Accounting Ledger – Printable Ledger Sheet (A4 + US Letter)",
-        problem: "You want one sheet that summarizes a full year cleanly.",
-        bullets: [
-          "Yearly layout",
-          "Standard + wide margin versions",
-          "Printable PDF",
-        ],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1170038582/yearly-accounting-ledger-printable",
-        price: "$1.93",
-      },
-      {
-        title:
-          "Printable Accounting Ledger Sheets + Money Tracker – Yearly Format (Violet)",
-        problem: "You want a yearly ledger in a specific color theme.",
-        bullets: ["Yearly format", "Violet theme", "Printable PDF"],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1202491640/printable-accounting-ledger-sheets-and",
-        price: "$1.97",
-      },
-      {
-        title:
-          "Printable Accounting Ledger Sheets – Money Tracker + General Ledger (Six Colors)",
-        problem:
-          "You want multiple color options for different accounts/projects.",
-        bullets: [
-          "Six colors",
-          "Printable set",
-          "Great for organizing multiple ledgers",
-        ],
-        image: "",
-        etsyUrl:
-          "https://www.etsy.com/listing/1177112696/printable-accounting-ledger-sheets-money",
-        price: "$3.20",
-      },
+      // {
+      //   title: "Printable Accounting General Ledger Sheet – Monthly Format",
+      //   problem: "You want a monthly ledger that’s easy to file and review.",
+      //   bullets: ["Monthly format", "Printable", "A4 + US Letter"],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1222780541/printable-accounting-general-ledger",
+      //   price: "$1.97",
+      // },
+      // {
+      //   title:
+      //     "Yearly Accounting Ledger – Printable Ledger Sheet (A4 + US Letter)",
+      //   problem: "You want one sheet that summarizes a full year cleanly.",
+      //   bullets: [
+      //     "Yearly layout",
+      //     "Standard + wide margin versions",
+      //     "Printable PDF",
+      //   ],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1170038582/yearly-accounting-ledger-printable",
+      //   price: "$1.93",
+      // },
+      // {
+      //   title:
+      //     "Printable Accounting Ledger Sheets + Money Tracker – Yearly Format (Violet)",
+      //   problem: "You want a yearly ledger in a specific color theme.",
+      //   bullets: ["Yearly format", "Violet theme", "Printable PDF"],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1202491640/printable-accounting-ledger-sheets-and",
+      //   price: "$1.97",
+      // },
+      // {
+      //   title:
+      //     "Printable Accounting Ledger Sheets – Money Tracker + General Ledger (Six Colors)",
+      //   problem:
+      //     "You want multiple color options for different accounts/projects.",
+      //   bullets: [
+      //     "Six colors",
+      //     "Printable set",
+      //     "Great for organizing multiple ledgers",
+      //   ],
+      //   image: "",
+      //   etsyUrl:
+      //     "https://www.etsy.com/listing/1177112696/printable-accounting-ledger-sheets-money",
+      //   price: "$3.20",
+      // },
     ],
   },
 
