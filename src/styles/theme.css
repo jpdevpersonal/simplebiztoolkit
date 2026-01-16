@@ -226,7 +226,7 @@ h5 {
 /* Navigation styling */
 .navbar-nav .nav-link:hover {
   background: var(--sb-soft);
-  color: var(--sb-blue) !important;
+  color: var(--sb-brand-blue) !important;
 }
 
 /* Mobile navigation improvements */
@@ -373,7 +373,11 @@ h5 {
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--sb-gradient-primary);
+  background: linear-gradient(
+    135deg,
+    var(--sb-brand-blue) 0%,
+    var(--sb-ink) 100%
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -382,7 +386,7 @@ h5 {
 .sb-value-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--sb-shadow-hover);
-  border-color: rgba(26, 127, 90, 0.2);
+  border-color: var(--sb-brand-blue);
 }
 
 .sb-value-card:hover::before {
@@ -401,8 +405,8 @@ h5 {
 }
 
 .sb-trust-pill:hover {
-  border-color: var(--sb-green);
-  background: linear-gradient(135deg, rgba(26, 127, 90, 0.05) 0%, #fff 100%);
+  border-color: var(--sb-brand-blue);
+  background: linear-gradient(135deg, rgba(65, 69, 86, 0.05) 0%, #fff 100%);
 }
 
 /* Testimonial card enhancement */
@@ -417,14 +421,14 @@ h5 {
   left: 0.75rem;
   font-size: 3rem;
   font-family: Georgia, serif;
-  color: var(--sb-green);
+  color: var(--sb-brand-blue);
   opacity: 0.15;
   line-height: 1;
 }
 
 /* Lead magnet section gradient */
 .sb-lead-magnet-card {
-  background: linear-gradient(135deg, #fff 0%, rgba(26, 127, 90, 0.02) 100%);
+  background: linear-gradient(135deg, #fff 0%, rgba(65, 69, 86, 0.02) 100%);
   border: 1px solid var(--sb-border);
   position: relative;
   overflow: hidden;
@@ -437,5 +441,9 @@ h5 {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--sb-gradient-primary);
+  background: linear-gradient(
+    135deg,
+    var(--sb-brand-blue) 0%,
+    var(--sb-ink) 100%
+  );
 }

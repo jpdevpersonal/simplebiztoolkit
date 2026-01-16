@@ -149,7 +149,7 @@ export default function SiteNavigation() {
                   style={{
                     width: "8px",
                     height: "8px",
-                    backgroundColor: "var(--sb-green)",
+                    backgroundColor: "var(--sb-brand-blue)",
                     borderRadius: "50%",
                     marginRight: "1rem",
                   }}
@@ -247,12 +247,14 @@ export default function SiteNavigation() {
         {navItems.map((item) => (
           <NavLink
             key={item.to}
-            className="px-3 py-2 text-decoration-none sb-muted rounded-pill"
+            className="px-3 py-2 text-decoration-none sb-muted rounded-pill nav-link"
             to={item.to}
-            style={{
+            style={({ isActive }) => ({
               transition: "all 0.2s ease",
               fontWeight: 600,
-            }}
+              backgroundColor: isActive ? "var(--sb-soft)" : "transparent",
+              color: isActive ? "var(--sb-brand-blue)" : undefined,
+            })}
           >
             {item.label}
           </NavLink>
