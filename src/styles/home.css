@@ -54,21 +54,8 @@
   padding: 1rem;
 }
 
-/* Mobile: compact hero image after content */
+/* Mobile and tablet: full width hero image */
 @media (max-width: 991px) {
-  .hero-image-wrapper {
-    padding: 0.5rem 0;
-    margin-top: 1rem;
-  }
-
-  .sb-hero .hero-image {
-    max-width: 280px;
-    opacity: 0.9;
-  }
-}
-
-/* Small mobile devices: full width hero image */
-@media (max-width: 576px) {
   .hero-image-wrapper {
     padding: 0;
     margin-top: 1rem;
