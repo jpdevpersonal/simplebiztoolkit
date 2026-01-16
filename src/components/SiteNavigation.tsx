@@ -82,7 +82,7 @@ export default function SiteNavigation() {
         {/* Header */}
         <div
           style={{
-            background: "var(--sb-green)",
+            background: "linear-gradient(135deg, #1f9d6d 0%, #0d5c3f 100%)",
             color: "white",
             padding: "1.25rem 1.5rem",
             display: "flex",
