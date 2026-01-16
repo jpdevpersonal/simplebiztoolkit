@@ -82,20 +82,19 @@ export default function SiteNavigation() {
         {/* Header */}
         <div
           style={{
-            background:
-              "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
+            background: "linear-gradient(135deg, #1f9d6d 0%, #0d5c3f 100%)",
             color: "white",
-            padding: "1.5rem",
+            padding: "1.25rem 1.5rem",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
           }}
         >
           <div>
-            <h4 style={{ margin: 0, fontWeight: 900, fontSize: "1.25rem" }}>
+            <h4 style={{ margin: 0, fontWeight: 700, fontSize: "1.125rem" }}>
               Menu
             </h4>
-            <p style={{ margin: 0, fontSize: "0.85rem", opacity: 0.9 }}>
+            <p style={{ margin: 0, fontSize: "0.8125rem", opacity: 0.9 }}>
               Simple Biz Toolkit
             </p>
           </div>
@@ -150,7 +149,7 @@ export default function SiteNavigation() {
                   style={{
                     width: "8px",
                     height: "8px",
-                    backgroundColor: "var(--sb-green)",
+                    backgroundColor: "var(--sb-brand-blue)",
                     borderRadius: "50%",
                     marginRight: "1rem",
                   }}
@@ -185,19 +184,18 @@ export default function SiteNavigation() {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "0.5rem",
-                padding: "1rem",
+                padding: "0.875rem 1rem",
                 marginBottom: "0.75rem",
                 textDecoration: "none",
-                fontWeight: 700,
-                fontSize: "1rem",
-                borderRadius: "12px",
-                background:
-                  "linear-gradient(135deg, var(--sb-green), var(--sb-green2))",
+                fontWeight: 600,
+                fontSize: "0.9375rem",
+                borderRadius: "8px",
+                background: "var(--sb-green)",
                 color: "white",
                 border: "none",
               }}
             >
-              ⭐ Get Free Template
+              Get Free Template
             </Link>
             <a
               href={LINKS.etsyShopUrl}
@@ -208,35 +206,32 @@ export default function SiteNavigation() {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "0.5rem",
-                padding: "1rem",
+                padding: "0.875rem 1rem",
                 textDecoration: "none",
-                fontWeight: 700,
-                fontSize: "1rem",
-                borderRadius: "12px",
+                fontWeight: 600,
+                fontSize: "0.9375rem",
+                borderRadius: "8px",
                 backgroundColor: "white",
                 color: "var(--sb-green)",
-                border: "2px solid var(--sb-green)",
+                border: "1px solid var(--sb-border)",
               }}
             >
-              🛒 Shop on Etsy
+              Shop on Etsy
             </a>
 
             <div
               style={{
                 marginTop: "1.5rem",
-                padding: "1rem",
+                padding: "0.875rem",
                 backgroundColor: "white",
-                borderRadius: "12px",
+                borderRadius: "8px",
                 textAlign: "center",
-                border: "1px solid #e0e0e0",
-                fontSize: "13px",
+                border: "1px solid var(--sb-border)",
+                fontSize: "0.8125rem",
               }}
             >
-              <div style={{ color: "var(--sb-green)", fontWeight: 700 }}>
-                🔒 Secure Checkout
-              </div>
-              <div style={{ color: "#666", marginTop: "4px" }}>
-                All transactions via Etsy
+              <div style={{ color: "var(--sb-muted)", fontWeight: 500 }}>
+                🔒 Secure checkout via Etsy
               </div>
             </div>
           </div>
@@ -252,12 +247,14 @@ export default function SiteNavigation() {
         {navItems.map((item) => (
           <NavLink
             key={item.to}
-            className="px-3 py-2 text-decoration-none sb-muted rounded-pill"
+            className="px-3 py-2 text-decoration-none sb-muted rounded-pill nav-link"
             to={item.to}
-            style={{
+            style={({ isActive }) => ({
               transition: "all 0.2s ease",
               fontWeight: 600,
-            }}
+              backgroundColor: isActive ? "var(--sb-soft)" : "transparent",
+              color: isActive ? "var(--sb-brand-blue)" : undefined,
+            })}
           >
             {item.label}
           </NavLink>

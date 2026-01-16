@@ -68,15 +68,25 @@ describe("ProductGrid", () => {
     it("should render Etsy links for all products", () => {
       render(<ProductGrid products={mockProducts} />);
 
-      const etsyLinks = screen.getAllByRole("link", { name: /View on Etsy/i });
+      // Each product card is now a link wrapping the entire card
+      const productLinks = screen.getAllByRole("link");
 
-      expect(etsyLinks.length).toBe(3);
-      expect(etsyLinks[0]).toHaveAttribute(
+      // Should have 3 product card links
+      expect(productLinks.length).toBe(3);
+      expect(productLinks[0]).toHaveAttribute(
         "href",
         "https://etsy.com/listing/1"
       );
-      expect(etsyLinks[0]).toHaveAttribute("target", "_blank");
-      expect(etsyLinks[0]).toHaveAttribute("rel", "noopener noreferrer");
+      expect(productLinks[0]).toHaveAttribute("target", "_blank");
+      expect(productLinks[0]).toHaveAttribute("rel", "noopener noreferrer");
+    });
+
+    it("should display 'View on Etsy' call-to-action text", () => {
+      render(<ProductGrid products={mockProducts} />);
+
+      // The CTA text should appear for each product
+      const ctaTexts = screen.getAllByText(/View on Etsy/i);
+      expect(ctaTexts.length).toBe(3);
     });
   });
 

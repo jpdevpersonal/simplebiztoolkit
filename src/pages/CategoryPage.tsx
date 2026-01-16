@@ -56,28 +56,38 @@ export default function CategoryPage() {
             </Link>
           </nav>
 
-          <div className="row g-3 align-items-center">
+          <div className="row g-4 align-items-center">
             <div className="col-lg-7">
-              <h1 style={{ fontWeight: 900 }}>{cat.name}</h1>
+              <h1 style={{ fontWeight: 700 }}>{cat.name}</h1>
               <p className="sb-muted fs-5">{cat.summary}</p>
 
-              <div className="sb-card p-3">
-                <div style={{ fontWeight: 900 }}>Why this helps</div>
-                <div className="sb-muted">
-                  Explain the problem, show the solution, then send them to Etsy
-                  with confidence. This is the funnel.
-                  :contentReference[oaicite:11]
-                </div>
+              <div
+                className="sb-card p-3"
+                style={{ borderLeft: "3px solid var(--sb-brand-blue)" }}
+              >
+                <h2
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Why this helps
+                </h2>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
+                  Browse the templates below, then complete your purchase
+                  securely through Etsy.
+                </p>
               </div>
 
               <div className="mt-3 d-flex gap-2 flex-wrap">
                 <a
-                  className="btn sb-btn-primary"
+                  className="btn sb-btn-ghost"
                   href={LINKS.etsyShopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Shop on Etsy
+                  Visit full Etsy shop
                 </a>
               </div>
             </div>

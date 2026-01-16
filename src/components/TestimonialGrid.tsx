@@ -5,12 +5,26 @@ export default function TestimonialGrid() {
     <div className="row g-3">
       {testimonials.map((t) => (
         <div className="col-md-4" key={t.quote}>
-          <div className="sb-card p-3 h-100">
-            <div style={{ fontWeight: 900 }}>"{t.quote}"</div>
-            <div className="sb-muted mt-2" style={{ fontSize: 13 }}>
+          <blockquote
+            className="sb-card p-3 h-100"
+            style={{ borderLeft: "3px solid var(--sb-brand-blue)", margin: 0 }}
+          >
+            <p
+              style={{
+                fontWeight: 500,
+                fontStyle: "italic",
+                marginBottom: "0.75rem",
+              }}
+            >
+              "{t.quote}"
+            </p>
+            <cite
+              className="sb-muted"
+              style={{ fontSize: "0.8125rem", fontStyle: "normal" }}
+            >
               — {t.name}, {t.role}
-            </div>
-          </div>
+            </cite>
+          </blockquote>
         </div>
       ))}
     </div>

@@ -50,16 +50,24 @@ export default function HomePage() {
               </div>
 
               <div className="d-flex gap-2 flex-wrap mt-3">
-                <a
-                  className="btn sb-btn-primary"
-                  href={LINKS.etsyShopUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Shop on Etsy
-                </a>
-                <Link className="btn sb-btn-ghost" to="/products">
-                  Browse products
+                <Link to="/products" className="btn sb-btn-primary">
+                  Browse All Products
+                  <svg
+                    className="sb-btn-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 8h10M9 4l4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </Link>
               </div>
 
@@ -68,18 +76,27 @@ export default function HomePage() {
               </div>
 
               {/* One strong testimonial near CTA */}
-              <div className="sb-card p-3 mt-4">
-                <div style={{ fontWeight: 900 }}>
+              <blockquote
+                className="sb-card p-3 mt-4"
+                style={{ borderLeft: "3px solid var(--sb-brand-blue)" }}
+              >
+                <p
+                  className="mb-1"
+                  style={{ fontWeight: 600, fontStyle: "italic" }}
+                >
                   "Saved me hours each month."
-                </div>
-                <div className="sb-muted" style={{ fontSize: 13 }}>
-                  — Verified Etsy buyer (placeholder)
-                </div>
-              </div>
+                </p>
+                <cite
+                  className="sb-muted"
+                  style={{ fontSize: "0.8125rem", fontStyle: "normal" }}
+                >
+                  — Verified Etsy buyer
+                </cite>
+              </blockquote>
             </div>
 
             <div className="col-lg-6">
-              <div className="p-3 d-flex justify-content-center">
+              <div className="hero-image-wrapper d-flex justify-content-center">
                 <img
                   src="/images/hero-image-desk.png"
                   alt="Tools for you small business"
@@ -90,12 +107,15 @@ export default function HomePage() {
           </div>
 
           {/* Product previews (proof) */}
-          <div className="sb-section pt-4 pb-0">
-            <h2 className="text-center" style={{ fontWeight: 900 }}>
+          <div className="sb-section pt-5 pb-0">
+            <h2
+              className="text-center"
+              style={{ fontWeight: 700, marginBottom: "0.5rem" }}
+            >
               What the templates look like
             </h2>
-            <p className="text-center sb-muted">
-              A quick preview — tap the image to zoom in
+            <p className="text-center sb-muted mb-4">
+              Tap any image to zoom in, or click to view on Etsy
             </p>
 
             <ProductGrid products={featuredProducts} />
@@ -107,36 +127,61 @@ export default function HomePage() {
       <section className="sb-section sb-section-alt">
         <div className="container">
           <div className="text-center mb-4">
-            <h2 style={{ fontWeight: 900 }}>Designed to be simple</h2>
+            <h2 style={{ fontWeight: 700 }}>Designed to be simple</h2>
             <p className="sb-muted">
-              Clear layouts, printable formats, and Essential categories.
+              Clear layouts, printable formats, and essential categories.
             </p>
           </div>
 
           <div className="row g-3">
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Essential templates</div>
-                <div className="sb-muted">
+            <div className="col-md-4 sb-animate-fade-in-delay-1">
+              <div className="sb-value-card">
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Essential templates
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Tracking, planning, and admin — without overcomplication.
-                </div>
+                </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Simple systems</div>
-                <div className="sb-muted">
+            <div className="col-md-4 sb-animate-fade-in-delay-2">
+              <div className="sb-value-card">
+                <span className="sb-value-icon">⚡</span>
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Simple systems
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Repeatable formats that keep you consistent.
-                </div>
+                </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
-                <div style={{ fontWeight: 900 }}>Real-world use</div>
-                <div className="sb-muted">
+            <div className="col-md-4 sb-animate-fade-in-delay-3">
+              <div className="sb-value-card">
+                <h3
+                  style={{
+                    fontWeight: 600,
+                    fontSize: "1rem",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  Real-world use
+                </h3>
+                <p className="sb-muted mb-0" style={{ fontSize: "0.9375rem" }}>
                   Made for small business owners, solo operators, and online
                   sellers.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -148,11 +193,8 @@ export default function HomePage() {
         <div className="container">
           <div className="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
             <div>
-              <h2 style={{ fontWeight: 900 }}>What customers say</h2>
-              <p className="sb-muted mb-0">
-                Social proof reduces hesitation. Put it right next to the
-                action.
-              </p>
+              <h2 style={{ fontWeight: 700 }}>What customers say</h2>
+              <p className="sb-muted mb-0">Real feedback from Etsy buyers.</p>
             </div>
             <Link className="btn sb-btn-ghost" to="/testimonials">
               Read more reviews
@@ -167,7 +209,24 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Shop on Etsy (secure checkout)
+              <span className="sb-btn-icon">🛒</span>
+              Browse the full shop on Etsy
+              <svg
+                className="sb-btn-arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12L12 4M12 4H6M12 4v6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -176,18 +235,24 @@ export default function HomePage() {
       {/* LEAD MAGNET */}
       <section className="sb-section sb-section-alt">
         <div className="container">
-          <div className="sb-card p-4">
-            <div className="row align-items-center g-3">
+          <div className="sb-lead-magnet-card sb-card p-4">
+            <div className="row align-items-center g-4">
               <div className="col-lg-6">
-                <h2 style={{ fontWeight: 900 }}>Get a free starter template</h2>
-                <p className="sb-muted mb-2">
-                  A quick win you can use today. This is the start of your email
-                  list funnel.
+                <h2 style={{ fontWeight: 700 }}>Get a free template</h2>
+                <p className="sb-muted mb-3">
+                  Try before you buy — a practical template you can use today.
                 </p>
-                <ul className="sb-muted mb-0">
-                  <li>Instant download link (via email)</li>
-                  <li>No spam — helpful tips + new releases</li>
-                  <li>Occasional subscriber-only discounts</li>
+                <ul
+                  className="sb-muted mb-0"
+                  style={{ paddingLeft: 0, listStyle: "none" }}
+                >
+                  <li style={{ marginBottom: "0.5rem" }}>
+                    ✅ Instant download link via email
+                  </li>
+                  <li style={{ marginBottom: "0.5rem" }}>
+                    ✅ No spam — just helpful tips & new releases
+                  </li>
+                  <li>✅ Occasional subscriber-only discounts</li>
                 </ul>
               </div>
               <div className="col-lg-6">

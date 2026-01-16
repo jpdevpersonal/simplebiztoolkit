@@ -13,7 +13,9 @@ async function submitEmail(email: string, source: string) {
 
 export default function EmailCaptureForm({ source }: Props) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,7 +40,7 @@ export default function EmailCaptureForm({ source }: Props) {
         aria-label="Email address"
       />
       <button className="btn sb-btn-primary" disabled={status === "loading"}>
-        {status === "loading" ? "Sending..." : "Get it"}
+        {status === "loading" ? "Sending..." : <>Get it now</>}
       </button>
 
       {status === "success" && (

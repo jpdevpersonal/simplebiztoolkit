@@ -12,55 +12,79 @@ type Product = {
 export default function ProductGrid({ products }: { products: Product[] }) {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
+  const handleImageClick = (e: React.MouseEvent, image: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setHoveredImage(image);
+  };
+
   return (
     <>
       <div className="row g-3 mt-2">
         {products.map((p) => (
           <div className="col-md-4" key={p.title}>
-            <div className="template-thumbnail sb-card h-100">
-              <div className="overflow-hidden" style={{ width: "100%" }}>
-                <div
-                  className="product-thumbnail-clickable"
-                  style={{
-                    aspectRatio: "10/7",
-                    width: "100%",
-                    overflow: "hidden",
-                  }}
-                  onClick={() => setHoveredImage(p.image)}
-                >
-                  <picture>
-                    <img
-                      src={p.image}
-                      alt={p.title}
-                      className="img-fluid ledger-thumb"
-                    />
-                  </picture>
+            <a
+              href={p.etsyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-card-link"
+            >
+              <article className="template-thumbnail sb-card h-100 product-card">
+                <div className="overflow-hidden" style={{ width: "100%" }}>
+                  <div
+                    className="product-thumbnail-clickable"
+                    style={{
+                      aspectRatio: "10/7",
+                      width: "100%",
+                      overflow: "hidden",
+                    }}
+                    onClick={(e) => handleImageClick(e, p.image)}
+                  >
+                    <picture>
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        className="img-fluid ledger-thumb"
+                      />
+                    </picture>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3">
-                <div className="sb-muted mt-1" style={{ fontWeight: 900 }}>
-                  {p.problem}
+                <div className="product-card-content">
+                  <h3 className="product-card-problem">{p.problem}</h3>
+                  <ul className="product-card-bullets">
+                    {p.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                  <span className="product-card-cta">
+                    <span className="sb-btn-icon" style={{ fontSize: "0.9em" }}>
+                      🛒
+                    </span>
+                    View on Etsy
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4 12L12 4M12 4H5M12 4v7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
                 </div>
-                <ul className="sb-muted mt-2 mb-3">
-                  {p.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
-                <a
-                  className="btn sb-btn-primary w-100"
-                  href={p.etsyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View on Etsy
-                </a>
-              </div>
-            </div>
+              </article>
+            </a>
           </div>
         ))}
       </div>
 
-      {/* Hover Preview Overlay */}
+      {/* Image Preview Overlay */}
       {hoveredImage && (
         <div
           className="product-image-preview-overlay"
