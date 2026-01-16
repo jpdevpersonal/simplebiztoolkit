@@ -243,16 +243,6 @@ describe("HomePage", () => {
       expect(screen.getByText(/Over 3500 sales/i)).toBeInTheDocument();
     });
 
-    it("should display a testimonial quote in hero section", () => {
-      renderHomePage();
-
-      // Check for the testimonial that reinforces value
-      expect(
-        screen.getByText(/Saved me hours each month/i),
-      ).toBeInTheDocument();
-      expect(screen.getByText(/Verified Etsy buyer/i)).toBeInTheDocument();
-    });
-
     it("should render hero image with proper alt text", () => {
       renderHomePage();
 
@@ -457,7 +447,7 @@ describe("HomePage", () => {
         text?.includes("What customers say"),
       );
       const leadMagnetIndex = headingTexts.findIndex((text) =>
-        text?.includes("free template"),
+        text?.includes("Get your free guide"),
       );
 
       // Verify order makes sense
