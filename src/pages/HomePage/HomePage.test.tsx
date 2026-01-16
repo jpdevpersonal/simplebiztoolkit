@@ -123,7 +123,7 @@ const renderHomePage = () => {
   return render(
     <MemoryRouter>
       <HomePage />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 };
 
@@ -144,7 +144,7 @@ describe("HomePage", () => {
 
       // Check title includes key branding and value proposition
       expect(seoComponent.getAttribute("data-title")).toContain(
-        "Simple Biz Toolkit"
+        "Simple Biz Toolkit",
       );
       expect(seoComponent.getAttribute("data-title")).toContain("Templates");
 
@@ -161,7 +161,7 @@ describe("HomePage", () => {
 
       const seoComponent = screen.getByTestId("seo-component");
       const jsonLd = JSON.parse(
-        seoComponent.getAttribute("data-jsonld") || "{}"
+        seoComponent.getAttribute("data-jsonld") || "{}",
       );
 
       // Verify JSON-LD schema for organization
@@ -169,7 +169,7 @@ describe("HomePage", () => {
       expect(jsonLd.name).toBe("Simple Biz Toolkit");
       expect(jsonLd.url).toBe("https://simplebiztoolkit.com");
       expect(jsonLd.sameAs).toContain(
-        "https://www.etsy.com/shop/simplebiztoolkit"
+        "https://www.etsy.com/shop/simplebiztoolkit",
       );
     });
   });
@@ -192,7 +192,7 @@ describe("HomePage", () => {
 
       // Verify key messaging about simplicity and usability
       expect(
-        screen.getByText(/Simple, ready-to-use downloads/i)
+        screen.getByText(/Simple, ready-to-use downloads/i),
       ).toBeInTheDocument();
       expect(screen.getByText(/reduce admin/i)).toBeInTheDocument();
     });
@@ -209,7 +209,7 @@ describe("HomePage", () => {
       expect(etsyButtons.length).toBeGreaterThan(0);
       expect(etsyButtons[0]).toHaveAttribute(
         "href",
-        "https://www.etsy.com/shop/simplebiztoolkit"
+        "https://www.etsy.com/shop/simplebiztoolkit",
       );
       expect(etsyButtons[0]).toHaveAttribute("target", "_blank");
       expect(etsyButtons[0]).toHaveAttribute("rel", "noopener noreferrer");
@@ -248,7 +248,7 @@ describe("HomePage", () => {
 
       // Check for the testimonial that reinforces value
       expect(
-        screen.getByText(/Saved me hours each month/i)
+        screen.getByText(/Saved me hours each month/i),
       ).toBeInTheDocument();
       expect(screen.getByText(/Verified Etsy buyer/i)).toBeInTheDocument();
     });
@@ -321,11 +321,11 @@ describe("HomePage", () => {
 
       // Verify supporting descriptions
       expect(
-        screen.getByText(/Tracking, planning, and admin/i)
+        screen.getByText(/Tracking, planning, and admin/i),
       ).toBeInTheDocument();
       expect(screen.getByText(/Repeatable formats/i)).toBeInTheDocument();
       expect(
-        screen.getByText(/Made for small business owners/i)
+        screen.getByText(/Made for small business owners/i),
       ).toBeInTheDocument();
     });
   });
@@ -374,7 +374,7 @@ describe("HomePage", () => {
       expect(etsyLink).toBeInTheDocument();
       expect(etsyLink).toHaveAttribute(
         "href",
-        "https://www.etsy.com/shop/simplebiztoolkit"
+        "https://www.etsy.com/shop/simplebiztoolkit",
       );
     });
   });
@@ -384,7 +384,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       const heading = screen.getByRole("heading", {
-        name: /Get a free starter template/i,
+        name: /Get a free template/i,
       });
 
       expect(heading).toBeInTheDocument();
@@ -404,7 +404,7 @@ describe("HomePage", () => {
       expect(screen.getByText(/Instant download link/i)).toBeInTheDocument();
       expect(screen.getByText(/No spam/i)).toBeInTheDocument();
       expect(
-        screen.getByText(/subscriber-only discounts/i)
+        screen.getByText(/subscriber-only discounts/i),
       ).toBeInTheDocument();
     });
 
@@ -423,7 +423,7 @@ describe("HomePage", () => {
 
       // Check for GDPR-compliant messaging
       expect(
-        screen.getByText(/By subscribing you agree to receive emails/i)
+        screen.getByText(/By subscribing you agree to receive emails/i),
       ).toBeInTheDocument();
       expect(screen.getByText(/Unsubscribe anytime/i)).toBeInTheDocument();
     });
@@ -448,16 +448,16 @@ describe("HomePage", () => {
 
       // Verify key sections appear in logical order
       const heroIndex = headingTexts.findIndex((text) =>
-        text?.includes("Essential templates")
+        text?.includes("Essential templates"),
       );
       const valuePropsIndex = headingTexts.findIndex((text) =>
-        text?.includes("Designed to be simple")
+        text?.includes("Designed to be simple"),
       );
       const testimonialsIndex = headingTexts.findIndex((text) =>
-        text?.includes("What customers say")
+        text?.includes("What customers say"),
       );
       const leadMagnetIndex = headingTexts.findIndex((text) =>
-        text?.includes("free starter template")
+        text?.includes("free template"),
       );
 
       // Verify order makes sense
@@ -530,6 +530,7 @@ describe("HomePage", () => {
       const productGrid = screen.getByTestId("product-grid");
 
       // Should show 3 featured products from the featured.ts data file
+      expect(productGrid).toBeInTheDocument();
       expect(productGrid.getAttribute("data-product-count")).toBe("3");
     });
   });
