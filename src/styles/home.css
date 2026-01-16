@@ -66,3 +66,19 @@
     opacity: 0.9;
   }
 }
+
+/* Small mobile devices: full width hero image */
+@media (max-width: 576px) {
+  .hero-image-wrapper {
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .sb-hero .hero-image {
+    max-width: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+}
