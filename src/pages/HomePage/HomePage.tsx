@@ -84,7 +84,7 @@ export default function HomePage() {
                   className="mb-1"
                   style={{ fontWeight: 600, fontStyle: "italic" }}
                 >
-                  "Saved me hours each month."
+                  "Perfect, saved me a lot of time."
                 </p>
                 <cite
                   className="sb-muted"

@@ -6,18 +6,18 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Clean, simple, and exactly what I needed to get organised fast.",
-    name: "Julie S.",
+    quote: "Easy and convenient to download.",
+    name: "Kristen.",
     role: "Small business owner",
   },
   {
-    quote: "Saved me hours each month. Wish I’d bought this sooner.",
-    name: "Mark T.",
+    quote: "Great product and easy to use.",
+    name: "Claudia.",
     role: "Etsy seller",
   },
   {
-    quote: "Looks professional and is easy to print and reuse.",
-    name: "Hannah L.",
-    role: "Solo operator",
+    quote: "Thank you for mnaking this!! Great stuff.",
+    name: "Travis.",
+    role: "Designer",
   },
 ];
