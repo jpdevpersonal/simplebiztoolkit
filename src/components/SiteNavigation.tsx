@@ -36,7 +36,7 @@ export default function SiteNavigation() {
     { to: "/testimonials", label: "Reviews" },
     { to: "/faq", label: "FAQ" },
     { to: "/help", label: "Help" },
-    { to: "/contact", label: "Contact" },
+    // { to: "/contact", label: "Contact" },
     { to: "/about", label: "About" },
   ];
 
@@ -91,12 +91,10 @@ export default function SiteNavigation() {
           }}
         >
           <div>
-            <h4 style={{ margin: 0, fontWeight: 700, fontSize: "1.125rem" }}>
+            {/* <h4 style={{ margin: 0, fontWeight: 700, fontSize: "1.125rem" }}>
               Menu
-            </h4>
-            <p style={{ margin: 0, fontSize: "0.8125rem", opacity: 0.9 }}>
-              Simple Biz Toolkit
-            </p>
+            </h4> */}
+            <p style={{ margin: 0, fontSize: "1rem" }}>Simple Biz Toolkit</p>
           </div>
           <button
             onClick={closeMenu}
@@ -195,7 +193,7 @@ export default function SiteNavigation() {
                 border: "none",
               }}
             >
-              Get Free Template
+              Get Your Free Guide
             </Link>
             <a
               href={LINKS.etsyShopUrl}

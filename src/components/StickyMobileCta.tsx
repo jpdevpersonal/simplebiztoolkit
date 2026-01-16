@@ -15,7 +15,7 @@ export default function StickyMobileCta() {
           Shop on Etsy
         </a>
         <Link className="btn sb-btn-ghost" to={LINKS.freebiePage}>
-          Get a Free template
+          Get your free guide
         </Link>
       </div>
     </div>

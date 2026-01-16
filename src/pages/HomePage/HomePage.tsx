@@ -84,7 +84,7 @@ export default function HomePage() {
                   className="mb-1"
                   style={{ fontWeight: 600, fontStyle: "italic" }}
                 >
-                  "Saved me hours each month."
+                  "Perfect, saved me a lot of time."
                 </p>
                 <cite
                   className="sb-muted"
@@ -237,7 +237,7 @@ export default function HomePage() {
           <div className="sb-lead-magnet-card sb-card p-4">
             <div className="row align-items-center g-4">
               <div className="col-lg-6">
-                <h2 style={{ fontWeight: 700 }}>Get a free template</h2>
+                <h2 style={{ fontWeight: 700 }}>Get your free guide</h2>
                 <p className="sb-muted mb-3">
                   Try before you buy — a practical template you can use today.
                 </p>
