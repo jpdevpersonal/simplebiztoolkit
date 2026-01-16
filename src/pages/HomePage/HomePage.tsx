@@ -152,7 +152,6 @@ export default function HomePage() {
             </div>
             <div className="col-md-4 sb-animate-fade-in-delay-2">
               <div className="sb-value-card">
-                <span className="sb-value-icon">⚡</span>
                 <h3
                   style={{
                     fontWeight: 600,
