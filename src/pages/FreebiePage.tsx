@@ -7,7 +7,7 @@ export default function FreebiePage() {
     <>
       <Seo
         title="Free Template | Simple Biz Toolkit"
-        description="Get a free starter template delivered by email. Try the format and quality before you buy on Etsy."
+        description="Get your free guide delivered by email. Try the format and quality before you buy on Etsy."
         canonicalPath="/free"
       />
 
@@ -48,7 +48,6 @@ export default function FreebiePage() {
             <div className="col-lg-6">
               <div className="sb-lead-magnet-card sb-card p-4">
                 <h2 style={{ fontWeight: 900 }} className="h4">
-                  <span style={{ marginRight: "0.5rem" }}>📧</span>
                   Send it to my inbox
                 </h2>
                 <p className="sb-muted mb-3">

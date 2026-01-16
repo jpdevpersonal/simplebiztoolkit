@@ -39,7 +39,7 @@ export default function SiteHeader() {
             to={LINKS.freebiePage}
             className="btn sb-btn-ghost d-none d-sm-inline-flex"
           >
-            Get a Free template
+            Get your free guide
           </Link>
 
           <a

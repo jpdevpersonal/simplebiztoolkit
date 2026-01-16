@@ -384,7 +384,7 @@ describe("HomePage", () => {
       renderHomePage();
 
       const heading = screen.getByRole("heading", {
-        name: /Get a free template/i,
+        name: /Get your free guide/i,
       });
 
       expect(heading).toBeInTheDocument();
