@@ -57,6 +57,9 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                     ))}
                   </ul>
                   <span className="product-card-cta">
+                    <span className="sb-btn-icon" style={{ fontSize: "0.9em" }}>
+                      🛒
+                    </span>
                     View on Etsy
                     <svg
                       width="14"

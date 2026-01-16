@@ -51,7 +51,24 @@ export default function HomePage() {
 
               <div className="d-flex gap-2 flex-wrap mt-3">
                 <Link to="/products" className="btn sb-btn-primary">
+                  <span className="sb-btn-icon">📦</span>
                   Browse All Products
+                  <svg
+                    className="sb-btn-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 8h10M9 4l4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </Link>
               </div>
 
@@ -118,8 +135,9 @@ export default function HomePage() {
           </div>
 
           <div className="row g-3">
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
+            <div className="col-md-4 sb-animate-fade-in-delay-1">
+              <div className="sb-value-card">
+                <span className="sb-value-icon">📋</span>
                 <h3
                   style={{
                     fontWeight: 600,
@@ -134,8 +152,9 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
+            <div className="col-md-4 sb-animate-fade-in-delay-2">
+              <div className="sb-value-card">
+                <span className="sb-value-icon">⚡</span>
                 <h3
                   style={{
                     fontWeight: 600,
@@ -150,8 +169,9 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="sb-card p-3 h-100">
+            <div className="col-md-4 sb-animate-fade-in-delay-3">
+              <div className="sb-value-card">
+                <span className="sb-value-icon">🎯</span>
                 <h3
                   style={{
                     fontWeight: 600,
@@ -180,6 +200,7 @@ export default function HomePage() {
               <p className="sb-muted mb-0">Real feedback from Etsy buyers.</p>
             </div>
             <Link className="btn sb-btn-ghost" to="/testimonials">
+              <span className="sb-btn-icon">⭐</span>
               Read more reviews
             </Link>
           </div>
@@ -192,7 +213,24 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <span className="sb-btn-icon">🛒</span>
               Browse the full shop on Etsy
+              <svg
+                className="sb-btn-arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12L12 4M12 4H6M12 4v6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -201,20 +239,27 @@ export default function HomePage() {
       {/* LEAD MAGNET */}
       <section className="sb-section sb-section-alt">
         <div className="container">
-          <div className="sb-card p-4">
+          <div className="sb-lead-magnet-card sb-card p-4">
             <div className="row align-items-center g-4">
               <div className="col-lg-6">
-                <h2 style={{ fontWeight: 700 }}>Get a free starter template</h2>
+                <h2 style={{ fontWeight: 700 }}>
+                  <span style={{ marginRight: "0.5rem" }}>🎁</span>
+                  Get a free starter template
+                </h2>
                 <p className="sb-muted mb-3">
                   Try before you buy — a practical template you can use today.
                 </p>
                 <ul
                   className="sb-muted mb-0"
-                  style={{ paddingLeft: "1.25rem" }}
+                  style={{ paddingLeft: 0, listStyle: "none" }}
                 >
-                  <li>Instant download link via email</li>
-                  <li>No spam — just helpful tips & new releases</li>
-                  <li>Occasional subscriber-only discounts</li>
+                  <li style={{ marginBottom: "0.5rem" }}>
+                    ✅ Instant download link via email
+                  </li>
+                  <li style={{ marginBottom: "0.5rem" }}>
+                    ✅ No spam — just helpful tips & new releases
+                  </li>
+                  <li>✅ Occasional subscriber-only discounts</li>
                 </ul>
               </div>
               <div className="col-lg-6">

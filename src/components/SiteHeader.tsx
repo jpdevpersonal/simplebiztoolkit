@@ -39,6 +39,7 @@ export default function SiteHeader() {
             to={LINKS.freebiePage}
             className="btn sb-btn-ghost d-none d-sm-inline-flex"
           >
+            <span className="sb-btn-icon">🎁</span>
             Free template
           </Link>
 
@@ -48,7 +49,24 @@ export default function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <span className="sb-btn-icon">🛒</span>
             Shop on Etsy
+            <svg
+              className="sb-btn-arrow"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 12L12 4M12 4H6M12 4v6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </a>
         </div>
       </div>
