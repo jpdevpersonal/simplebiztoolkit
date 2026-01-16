@@ -40,14 +40,7 @@ export default function EmailCaptureForm({ source }: Props) {
         aria-label="Email address"
       />
       <button className="btn sb-btn-primary" disabled={status === "loading"}>
-        {status === "loading" ? (
-          "Sending..."
-        ) : (
-          <>
-            <span className="sb-btn-icon">📧</span>
-            Get it free
-          </>
-        )}
+        {status === "loading" ? "Sending..." : <>Get it now</>}
       </button>
 
       {status === "success" && (

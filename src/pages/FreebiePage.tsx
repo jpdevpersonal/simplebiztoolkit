@@ -15,10 +15,7 @@ export default function FreebiePage() {
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <h1 style={{ fontWeight: 900 }}>
-                <span style={{ marginRight: "0.5rem" }}>🎁</span>
-                Free starter template
-              </h1>
+              <h1 style={{ fontWeight: 900 }}>Free starter template</h1>
               <p className="sb-muted fs-5">
                 A Essential download you can use today. This is your lead magnet
                 — it builds your list and trust. :contentReference[oaicite:13]
@@ -26,7 +23,6 @@ export default function FreebiePage() {
 
               <div className="sb-card p-3">
                 <div style={{ fontWeight: 900, marginBottom: "0.5rem" }}>
-                  <span style={{ marginRight: "0.35rem" }}>📋</span>
                   What you'll get
                 </div>
                 <ul
@@ -87,7 +83,6 @@ export default function FreebiePage() {
                     </svg>
                   </a>
                   <a className="btn sb-btn-ghost" href="/products">
-                    <span className="sb-btn-icon">📦</span>
                     Browse categories
                   </a>
                 </div>
