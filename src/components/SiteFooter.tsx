@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { LINKS } from "../app/App";
+import Link from "next/link";
+import { links } from "@/config/links";
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -22,7 +22,7 @@ export default function SiteFooter() {
           <p className="sb-muted mb-0" style={{ fontSize: "0.8125rem" }}>
             Support:{" "}
             <a
-              href={LINKS.etsyShopUrl}
+              href={links.etsyShopUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,14 +36,14 @@ export default function SiteFooter() {
           className="d-flex gap-3 flex-wrap align-items-start justify-content-lg-end"
           style={{ fontSize: "0.9375rem" }}
         >
-          <Link to="/products">Products</Link>
-          <Link to="/blog">Resources</Link>
-          <Link to="/testimonials">Reviews</Link>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/help">Help</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
-          <a href={LINKS.etsyShopUrl} target="_blank" rel="noopener noreferrer">
+          <Link href="/products">Products</Link>
+          <Link href="/blog">Resources</Link>
+          <Link href="/testimonials">Reviews</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/help">Help</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
+          <a href={links.etsyShopUrl} target="_blank" rel="noopener noreferrer">
             Etsy Shop
           </a>
         </nav>

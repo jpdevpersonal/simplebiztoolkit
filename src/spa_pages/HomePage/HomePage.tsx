@@ -5,7 +5,7 @@ import EmailCaptureForm from "../../components/EmailCaptureForm";
 import TestimonialGrid from "../../components/TestimonialGrid";
 import ProductGrid from "../../components/ProductGrid";
 import { featuredProducts } from "../../data/featured";
-import { LINKS } from "../../app/App";
+import { links } from "../../config/links";
 
 import "../../styles/home.css";
 
@@ -22,7 +22,7 @@ export default function HomePage() {
     "@type": "Organization",
     name: "Simple Biz Toolkit",
     url: "https://simplebiztoolkit.com",
-    sameAs: [LINKS.etsyShopUrl],
+    sameAs: [links.etsyShopUrl],
   };
 
   return (
@@ -204,7 +204,7 @@ export default function HomePage() {
           <div className="text-center mt-4">
             <a
               className="btn sb-btn-primary"
-              href={LINKS.etsyShopUrl}
+              href={links.etsyShopUrl}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -105,11 +105,11 @@ vi.mock("../../data/featured", () => ({
   ],
 }));
 
-// Mock the App constants
-vi.mock("../../app/App", () => ({
-  LINKS: {
+// Mock shared links config
+vi.mock("../../config/links", () => ({
+  links: {
     etsyShopUrl: "https://www.etsy.com/shop/simplebiztoolkit",
-    freebiePage: "/free",
+    freebiePath: "/free",
   },
 }));
 

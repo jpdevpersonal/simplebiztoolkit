@@ -4,17 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "preview": "vite preview",
     "test": "vitest run --testTimeout=10000",
     "test:ui": "vitest --ui",
     "test:ci": "vitest run --reporter=dot"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "next": "^15.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",

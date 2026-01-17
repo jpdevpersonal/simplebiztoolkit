@@ -1,22 +1,29 @@
+"use client";
+
 import { useState, useEffect, useRef } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { LINKS } from "../app/App";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { links } from "@/config/links";
 import { createPortal } from "react-dom";
 
 export default function SiteNavigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-  const prevPathRef = useRef(location.pathname);
+  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
+  const prevPathRef = useRef(pathname);
+
+  // Avoid SSR/client mismatch: portals can only exist after mount.
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close menu only when route actually changes
   useEffect(() => {
-    if (prevPathRef.current === location.pathname) return;
-    prevPathRef.current = location.pathname;
-    const handle = setTimeout(() => {
-      setIsOpen(false);
-    }, 0);
+    if (prevPathRef.current === pathname) return;
+    prevPathRef.current = pathname;
+    const handle = setTimeout(() => setIsOpen(false), 0);
     return () => clearTimeout(handle);
-  }, [location.pathname]);
+  }, [pathname]);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -39,6 +46,12 @@ export default function SiteNavigation() {
     // { to: "/contact", label: "Contact" },
     { to: "/about", label: "About" },
   ];
+
+  const isActive = (href: string) => {
+    if (!pathname) return false;
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   const closeMenu = () => setIsOpen(false);
 
@@ -99,7 +112,6 @@ export default function SiteNavigation() {
           <button
             onClick={closeMenu}
             style={{
-              background: "rgba(255,255,255,0.2)",
               border: "none",
               borderRadius: "8px",
               width: "36px",
@@ -127,10 +139,10 @@ export default function SiteNavigation() {
         <div style={{ flex: 1, overflowY: "auto", backgroundColor: "#fafafa" }}>
           <nav style={{ padding: "0.5rem 0" }}>
             {navItems.map((item) => (
-              <NavLink
+              <Link
                 key={item.to}
-                to={item.to}
                 onClick={closeMenu}
+                href={item.to}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -168,14 +180,14 @@ export default function SiteNavigation() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </NavLink>
+              </Link>
             ))}
           </nav>
 
           {/* Action Buttons */}
           <div style={{ padding: "1.5rem" }}>
             <Link
-              to={LINKS.freebiePage}
+              href={links.freebiePath}
               onClick={closeMenu}
               style={{
                 display: "flex",
@@ -196,7 +208,7 @@ export default function SiteNavigation() {
               Get Your Free Guide
             </Link>
             <a
-              href={LINKS.etsyShopUrl}
+              href={links.etsyShopUrl}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -243,19 +255,21 @@ export default function SiteNavigation() {
       {/* Desktop Navigation */}
       <nav className="d-none d-lg-flex align-items-center gap-2">
         {navItems.map((item) => (
-          <NavLink
+          <Link
             key={item.to}
             className="px-3 py-2 text-decoration-none sb-muted rounded-pill nav-link"
-            to={item.to}
-            style={({ isActive }) => ({
+            href={item.to}
+            style={{
               transition: "all 0.2s ease",
               fontWeight: 600,
-              backgroundColor: isActive ? "var(--sb-soft)" : "transparent",
-              color: isActive ? "var(--sb-brand-blue)" : undefined,
-            })}
+              backgroundColor: isActive(item.to)
+                ? "var(--sb-soft)"
+                : "transparent",
+              color: isActive(item.to) ? "var(--sb-brand-blue)" : undefined,
+            }}
           >
             {item.label}
-          </NavLink>
+          </Link>
         ))}
       </nav>
 
@@ -305,7 +319,7 @@ export default function SiteNavigation() {
       </button>
 
       {/* Portal the mobile menu to body to avoid z-index issues */}
-      {createPortal(mobileMenu, document.body)}
+      {mounted ? createPortal(mobileMenu, document.body) : null}
     </>
   );
 }

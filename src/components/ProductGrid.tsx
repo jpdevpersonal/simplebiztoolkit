@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import "../styles/products.css";
 
 type Product = {
@@ -36,15 +39,22 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                     style={{
                       aspectRatio: "10/7",
                       width: "100%",
+                      position: "relative",
                       overflow: "hidden",
                     }}
-                    onClick={(e) => handleImageClick(e, p.image)}
+                    onClick={(e) => {
+                      const src = p.image || "/images/placeholder-preview.png";
+                      handleImageClick(e, src);
+                    }}
                   >
                     <picture>
-                      <img
-                        src={p.image}
+                      <Image
+                        src={p.image || "/images/placeholder-preview.png"}
                         alt={p.title}
                         className="img-fluid ledger-thumb"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        style={{ objectFit: "cover" }}
                       />
                     </picture>
                   </div>
@@ -91,7 +101,14 @@ export default function ProductGrid({ products }: { products: Product[] }) {
           onClick={() => setHoveredImage(null)}
         >
           <div className="product-image-preview-content">
-            <img src={hoveredImage} alt="Product preview" />
+            <Image
+              src={hoveredImage}
+              alt="Product preview"
+              width={1200}
+              height={840}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto" }}
+            />
           </div>
         </div>
       )}
