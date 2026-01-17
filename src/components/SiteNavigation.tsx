@@ -14,7 +14,8 @@ export default function SiteNavigation() {
 
   // Avoid SSR/client mismatch: portals can only exist after mount.
   useEffect(() => {
-    setMounted(true);
+    const handle = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(handle);
   }, []);
 
   // Close menu only when route actually changes
