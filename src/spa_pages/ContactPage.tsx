@@ -1,5 +1,5 @@
 import Seo from "../components/Seo";
-import { LINKS } from "../app/App";
+import { links } from "../config/links";
 
 export default function ContactPage() {
   return (
@@ -31,7 +31,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     className="btn sb-btn-primary"
-                    href={LINKS.etsyShopUrl}
+                    href={links.etsyShopUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

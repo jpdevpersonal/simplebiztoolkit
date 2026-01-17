@@ -13,10 +13,12 @@ dist-ssr
 .next
 out
 *.local
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 coverage

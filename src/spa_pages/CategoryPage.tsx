@@ -2,11 +2,11 @@ import { useParams, Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import ProductGrid from "../components/ProductGrid";
 import { categories } from "../data/products";
-import { LINKS } from "../app/App";
+import { links } from "../config/links";
 import "../styles/products.css";
 
 export default function CategoryPage() {
-  const { categorySlug } = useParams();
+  const { categorySlug } = useParams<{ categorySlug: string }>();
   const cat = categories.find((c) => c.slug === categorySlug);
 
   if (!cat) {
@@ -83,7 +83,7 @@ export default function CategoryPage() {
               <div className="mt-3 d-flex gap-2 flex-wrap">
                 <a
                   className="btn sb-btn-ghost"
-                  href={LINKS.etsyShopUrl}
+                  href={links.etsyShopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

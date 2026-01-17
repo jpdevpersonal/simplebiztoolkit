@@ -1,6 +1,6 @@
 import Seo from "../components/Seo";
 import TestimonialGrid from "../components/TestimonialGrid";
-import { LINKS } from "../app/App";
+import { links } from "../config/links";
 
 export default function TestimonialsPage() {
   return (
@@ -15,13 +15,19 @@ export default function TestimonialsPage() {
         <div className="container">
           <h1 style={{ fontWeight: 900 }}>Reviews</h1>
           <p className="sb-muted">
-            Put your best Etsy quotes here (real ones). Testimonials near CTAs increase conversions. :contentReference[oaicite:19]
+            Put your best Etsy quotes here (real ones). Testimonials near CTAs
+            increase conversions. :contentReference[oaicite:19]
           </p>
 
           <TestimonialGrid />
 
           <div className="text-center mt-4">
-            <a className="btn sb-btn-primary" href={LINKS.etsyShopUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn sb-btn-primary"
+              href={links.etsyShopUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Shop on Etsy
             </a>
           </div>

@@ -1,6 +1,6 @@
 import Seo from "../components/Seo";
 import EmailCaptureForm from "../components/EmailCaptureForm";
-import { LINKS } from "../app/App";
+import { links } from "../config/links";
 
 export default function FreebiePage() {
   return (
@@ -58,7 +58,7 @@ export default function FreebiePage() {
                 <div className="mt-3 d-flex gap-2 flex-wrap">
                   <a
                     className="btn sb-btn-primary"
-                    href={LINKS.etsyShopUrl}
+                    href={links.etsyShopUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

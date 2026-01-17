@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import { posts } from "../data/posts";
-import { LINKS } from "../app/App";
+import { links } from "../config/links";
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -76,7 +76,7 @@ export default function BlogPostPage() {
               </Link>
               <a
                 className="btn sb-btn-ghost"
-                href={LINKS.etsyShopUrl}
+                href={links.etsyShopUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >

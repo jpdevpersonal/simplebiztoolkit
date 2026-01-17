@@ -33,8 +33,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "src/spa_app",
-    "src/spa_pages",
     "src/test",
     "src/main.tsx",
     "src/**/*.test.ts",
